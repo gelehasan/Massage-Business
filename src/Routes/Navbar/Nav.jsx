@@ -5,7 +5,7 @@ import { useState } from "react";
 import MenuIcon from "../../Assets/menu.svg";
 import XIcon from "../../Assets/x.svg";
 const Navbar = ()=>{
-    const {isMenuOn, setIsMenuOn} = useState(false);
+    const [isMenuOn, setIsMenuOn] = useState(false);
 
     const toggleMenu = ()=>{
 
@@ -16,9 +16,11 @@ const Navbar = ()=>{
             
             
             <div className="navLogo">
-                <img src={MassageIcon} />
+                <img src={MassageIcon} className="Logo"/>
 
-                <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu}/>
+                <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
+                    className="Menus"
+                />
             </div>
 
             <div className={isMenuOn ? "navLinks openMenu" : "navLinks"}>

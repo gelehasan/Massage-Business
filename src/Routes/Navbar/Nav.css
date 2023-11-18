@@ -3,7 +3,7 @@
     margin: 0 auto;
     margin-top: 1em;
     background-color: transparent;
-    border: 1px solid red;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,10 +11,13 @@
 }
 
 
-.navLogo img{
+.Logo{
     width: 70px;
 }
 
+.Menus{
+    display: none;
+}
 .navLinks ul{
     display: flex;
     gap: 34px;
@@ -31,14 +34,30 @@
 
 
 @media (max-width:741px){
+    .navLogo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1em 0 1em;
+       
+    }
     .navContainer{
      margin: 0;
      width: 100%;
-
+     border: 1px solid black;
    /* padding: 15px 15px 0px 15px;*/  
     }
 
-
+    .Logo{
+        width: 50px;
+    }
+    
+    .Menus{
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        right: 0;
+    }
     .navLinks{
       
         position: absolute;
