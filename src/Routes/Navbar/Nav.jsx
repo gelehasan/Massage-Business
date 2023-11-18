@@ -1,19 +1,27 @@
 import MassageIcon from "../../Assets/AFROICOVN.png"
 import { Link } from "react-router-dom";
 import "./Nav.css"
-
+import { useState } from "react";
+import MenuIcon from "../../Assets/menu.svg";
+import XIcon from "../../Assets/x.svg";
 const Navbar = ()=>{
+    const {isMenuOn, setIsMenuOn} = useState(false);
 
+    const toggleMenu = ()=>{
 
+        setIsMenuOn(!isMenuOn)
+    }
     return(
         <div className="navContainer">
             
             
             <div className="navLogo">
                 <img src={MassageIcon} />
+
+                <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu}/>
             </div>
 
-            <div className="navLinks">
+            <div className={isMenuOn ? "navLinks openMenu" : "navLinks"}>
 
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>

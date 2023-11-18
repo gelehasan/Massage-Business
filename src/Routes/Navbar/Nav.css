@@ -45,6 +45,12 @@
         top: 100%;
         right: 0%;
         border: 1px solid red;
+        transition: right 0.3s ease-in-out;
+        right: -110%;
+    }
+
+    .openMenu{
+        right: 0%;
     }
 
     .navLinks ul{
