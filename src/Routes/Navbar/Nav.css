@@ -1,0 +1,25 @@
+.navContainer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: transparent;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navLogo img{
+    width: 70px;
+}
+
+.navLinks ul{
+    display: flex;
+    gap: 34px;
+}
+
+.links{
+    text-decoration: 'none';
+    color: 'inherit';
+}
