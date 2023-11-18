@@ -1,5 +1,5 @@
 .navContainer{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 1em;
     background-color: transparent;
@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 
@@ -17,9 +18,37 @@
 .navLinks ul{
     display: flex;
     gap: 34px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
 }
 
-.links{
-    text-decoration: 'none';
-    color: 'inherit';
+.Nav-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+
+@media (max-width:741px){
+    .navContainer{
+     margin: 0;
+     width: 100%;
+
+   /* padding: 15px 15px 0px 15px;*/  
+    }
+
+
+    .navLinks{
+      
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        border: 1px solid red;
+    }
+
+    .navLinks ul{
+        flex-direction: column;
+        right: 0;
+    }
 }
