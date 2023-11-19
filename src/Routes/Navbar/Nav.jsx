@@ -4,6 +4,7 @@ import "./Nav.css"
 import { useState } from "react";
 import MenuIcon from "../../Assets/menu.svg";
 import XIcon from "../../Assets/x.svg";
+import { Outlet } from "react-router-dom";
 const Navbar = ()=>{
     const [isMenuOn, setIsMenuOn] = useState(false);
 
@@ -12,6 +13,7 @@ const Navbar = ()=>{
         setIsMenuOn(!isMenuOn)
     }
     return(
+    <>
         <div className="navContainer">
             
             
@@ -35,7 +37,10 @@ const Navbar = ()=>{
                 </ul>
 
             </div>
+
         </div>
+        <Outlet/>
+        </>
     )
 
 

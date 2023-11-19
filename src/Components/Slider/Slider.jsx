@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import "./sliderStyle.css"
 const Slider = ()=>{
     const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
@@ -22,27 +22,27 @@ const Slider = ()=>{
   };
 
     return (
+
+       
         <div className="slider-container">
+    <img className="sliderImg" src="https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
       <div className="slides">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`slide ${index === currentSlide ? 'active' : ''}`}
-          >
-            {slide.content}
-          </div>
-        ))}
+        <h1> Message & Comestic</h1>
+        <p>Uppstäck vårt djupa engagemang för att förena kropp, själ och sinne gemom afrikansk massage och filosofin av Ubuntu </p>
+        <button>Boka Nu</button>
       </div>
-      <div className="circles">
+      {/*<div className="circles">
         {slides.map((_, index) => (
-          <FaCircle
+          <div
             key={index}
             className={`circle ${index === currentSlide ? 'active' : ''}`}
             onClick={() => handleCircleClick(index)}
           />
         ))}
-      </div>
+      </div>*/
+}
     </div>
+
     )
 }
 
