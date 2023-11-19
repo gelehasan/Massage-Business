@@ -20,17 +20,20 @@
 }
 .navLinks ul{
     display: flex;
+  
     gap: 34px;
     list-style: none;
     text-decoration: none;
     color: black;
 }
-
+.navLinks ul li {
+    color: white;
+}
 .Nav-link {
     text-decoration: none;
     color: inherit;
   }
-  
+
 
 
 @media (max-width:741px){
