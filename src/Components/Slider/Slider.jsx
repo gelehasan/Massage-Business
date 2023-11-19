@@ -7,6 +7,20 @@ const Slider = ()=>{
         { content: <div>Slide 2</div> },
         { content: <div>Slide 3</div> },
       ];
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
+  const handleCircleClick = (index) => {
+    setCurrentSlide(index);
+  };
+
     return (
         <div>
             
