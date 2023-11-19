@@ -22,9 +22,27 @@ const Slider = ()=>{
   };
 
     return (
-        <div>
-            
-        </div>
+        <div className="slider-container">
+      <div className="slides">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${index === currentSlide ? 'active' : ''}`}
+          >
+            {slide.content}
+          </div>
+        ))}
+      </div>
+      <div className="circles">
+        {slides.map((_, index) => (
+          <FaCircle
+            key={index}
+            className={`circle ${index === currentSlide ? 'active' : ''}`}
+            onClick={() => handleCircleClick(index)}
+          />
+        ))}
+      </div>
+    </div>
     )
 }
 
