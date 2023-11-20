@@ -70,10 +70,14 @@
         border: 1px solid red;
         transition: right 0.3s ease-in-out;
         right: -110%;
+        display: none;
+        z-index: 99;
     }
 
     .openMenu{
+        z-index: 99;
         right: 0%;
+        display: block;
     }
 
     .navLinks ul{
