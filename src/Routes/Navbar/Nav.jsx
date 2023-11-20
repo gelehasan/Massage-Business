@@ -30,7 +30,7 @@ const Navbar = ()=>{
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>
                 <Link to={"/"} className="Nav-link"><li>Om Oss</li></Link>
-                <Link to={"/"} className="Nav-link"><li>Tjänster</li></Link>
+                <Link to={"/services"} className="Nav-link"><li>Tjänster</li></Link>
                 <Link to={"/"} className="Nav-link"><li>Kontakta Oss</li></Link>
                 <li>+46739752503</li>
 
