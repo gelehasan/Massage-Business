@@ -1,0 +1,21 @@
+.serviceContainer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99.9%;
+    border: 1px solid red;
+    z-index: -2;
+}
+
+.serviceHeader{
+    border: 1px solid black;
+    height: 50%;
+    position: relative;
+}
+
+.serviceHeader img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
