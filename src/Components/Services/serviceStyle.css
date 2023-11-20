@@ -8,14 +8,22 @@
 }
 
 .serviceHeader{
+    position: relative;
     border: 1px solid black;
     height: 50%;
-    position: relative;
+    display: flex;
+   
 }
 
 .serviceHeader img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -99;
    
+}
+.details{
+
+    color: white;
 }
