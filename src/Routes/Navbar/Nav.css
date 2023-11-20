@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+
 }
 
 
@@ -62,7 +63,7 @@
         right: 0;
     }
     .navLinks{
-      
+   
         position: absolute;
         top: 100%;
         right: 0%;
