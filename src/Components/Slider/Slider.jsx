@@ -44,7 +44,7 @@ const Slider = () => {
       <div className="slides">
         <h1>{h1Text}</h1>
         <p>{pText}</p>
-        <button>Boka Nu</button>
+        <button className="bokanNu">Boka Nu</button>
       </div>
       {/* Circles section (uncomment if needed)
       <div className="circles">

@@ -74,6 +74,31 @@ Genom medveten beröring skärps den sensoriska uppfattningen av kroppen och en 
 <b> 60 min - 650kr</b>
 <button className="bokanNu">Boka Nu</button>
         </div>
+        <h3>Arbetstid</h3>
+        <div className="timeSheet">
+            
+            <div className="daysOpen">
+                <div>
+                Måndag -Fredag
+                </div>
+                <div> 
+                09:00 - 19:00
+                </div>
+            </div>
+------------------------------------------------------
+            <div> 
+Lördag 09:00 - 19:00 09:00 - 15:00 Söndag är stängt
+            </div>
+
+        </div>
+
+
+        <div className="serviceExample Picture">
+
+            <h2>Bild på tjänsten</h2>
+            <img className="servicePicture" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+
+        </div>
       </div>
     </div>
             

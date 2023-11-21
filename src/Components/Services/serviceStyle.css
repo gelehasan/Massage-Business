@@ -41,8 +41,27 @@ width:420px;
 height: 350px;
 }
 
+.timeBooking h2{
+    margin: 0;
+}
 .timeBooking{
     width: 300px;
     font-size: 1.1rem;
-    border: 1px solid green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 9px;
+
+}
+
+
+.timeSheet{
+    border: 1px solid red;
+}
+.daysOpen{
+    display: flex;
+    gap: 165px;
 }
