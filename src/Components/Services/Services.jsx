@@ -17,7 +17,7 @@ const Services = ()=>{
 
                 </div>
             </div>
-/*Dont touch*/
+
  <div className="serviceContent">
       
       <div className="contetLeft">
@@ -68,12 +68,17 @@ Genom medveten beröring skärps den sensoriska uppfattningen av kroppen och en 
       
       <div class="contentRight">
         
+        <div className="timeBooking">
+    <h2> Afrikansk Signatur</h2>
+<p>Boka din tid nu hos Aforoots of Sweden Massage & Cosmetics </p>
+<b> 60 min - 650kr</b>
+<button className="bokanNu">Boka Nu</button>
+        </div>
       </div>
     </div>
             
 
 
-/*Dont touch*/
 
         </div>
     )
