@@ -17,6 +17,17 @@ const Services = ()=>{
 
                 </div>
             </div>
+
+
+                <div class="serviceContent">
+      
+      <div class="contetLeft">
+        
+      </div>
+      
+      <div class="contentRight">
+        
+      </div>
             
 
         </div>
