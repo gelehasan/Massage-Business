@@ -1,23 +1,21 @@
-.serviceContainer{
+.serviceContainer {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100vw;
-
     z-index: -2;
-
-   
 }
-.serviceHeader{
+
+.serviceHeader {
     position: relative;
     border: 1px solid black;
     width: 100%;
     height: 400px;
     display: flex;
-  justify-content: center;
-  align-items: center;
-   
+    justify-content: center;
+    align-items: center;
 }
+
 .serviceHeader img {
     position: absolute;
     width: 100%;
@@ -26,80 +24,69 @@
     z-index: -99;
 }
 
-
-
-.details{
-  position: absolute;
-  
+.details {
+    position: absolute;
     width: 70%;
     color: white;
     font-size: 1.2rem;
 }
 
-.servicePicture{
-width:320px;
-height: 250px;
+.servicePicture {
+    width: 320px;
+    height: 250px;
 }
 
-.timeBooking h2{
+.timeBooking h2 {
     margin: 0;
 }
-.timeBooking{
+
+.timeBooking {
     width: 300px;
     font-size: 1.1rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
     gap: 9px;
-
 }
 
-
-.timeSheet{
-  
-}
-.daysOpen{
+.timeSheet {
     display: flex;
-    gap: 165px;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start; 
 }
 
-.serviceContent{
-  
+.serviceContent {
     display: flex;
     width: 90%;
     margin: 0 auto;
     gap: 30px;
 }
-.contetLeft{
 
-}
 
-.contentRight{
 
+.contentRight {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-@media(max-width:808px){
-    .serviceContent{
+@media (max-width: 808px) {
+    .serviceContent {
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start; 
     }
-    .contentRight{
+    .contentRight {
         border: 1px solid red;
-        align-items: left;
-        text-align: center;
+        text-align: left; 
     }
 
-    .timeSheet{
+    .timeSheet {
         display: flex;
         flex-direction: column;
         text-align: left;
-        align-items: left;
+        align-items: flex-start; 
     }
 }
