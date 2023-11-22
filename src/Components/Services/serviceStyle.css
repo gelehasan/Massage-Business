@@ -37,8 +37,8 @@
 }
 
 .servicePicture{
-width:420px;
-height: 350px;
+width:320px;
+height: 250px;
 }
 
 .timeBooking h2{
@@ -83,4 +83,23 @@ height: 350px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+@media(max-width:808px){
+    .serviceContent{
+        flex-direction: column;
+        align-items: left;
+    }
+    .contentRight{
+        border: 1px solid red;
+        align-items: left;
+        text-align: center;
+    }
+
+    .timeSheet{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: left;
+    }
 }
