@@ -85,7 +85,7 @@ Genom medveten beröring skärps den sensoriska uppfattningen av kroppen och en 
                 09:00 - 19:00
                 </div>
             </div>
-------------------------------------------------------
+--------------------------------------------
             <div> 
 Lördag 09:00 - 19:00 09:00 - 15:00 Söndag är stängt
             </div>
