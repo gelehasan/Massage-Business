@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     height: 100vw;
-    border: 1px solid red;
+
     z-index: -2;
 
    
@@ -59,9 +59,24 @@ height: 350px;
 
 
 .timeSheet{
-    border: 1px solid red;
+  
 }
 .daysOpen{
     display: flex;
     gap: 165px;
+}
+
+.serviceContent{
+  
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 30px;
+}
+.contetLeft{
+    border: 1px solid brown;
+}
+
+.contentRight{
+    border: 1px solid red;
 }
