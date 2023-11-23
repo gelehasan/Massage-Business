@@ -46,17 +46,7 @@ const Slider = () => {
         <p>{pText}</p>
         <button className="bokanNu">Boka Nu</button>
       </div>
-      {/* Circles section (uncomment if needed)
-      <div className="circles">
-        {slides.map((_, index) => (
-          <div
-            key={index}
-            className={`circle ${index === count ? 'active' : ''}`}
-            onClick={() => handleCircleClick(index)}
-          />
-        ))}
-      </div>
-      */}
+      
     </div>
   );
 };
