@@ -3,6 +3,7 @@ import "./serviceStyle.css";
 
 //Needs the html code broken down into pieces
 //move right section to their own component
+// ALso left one to their own component
 const Services = ()=>{
 
     return(
