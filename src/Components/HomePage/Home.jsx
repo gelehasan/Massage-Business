@@ -9,11 +9,13 @@ const HomePage = ()=>{
 
             <div>
                 <div>
-        <p></p>
+        <p>Upptäck vårt breda
+utbud av skräddarsydda
+massagebehandlingar</p>
                 </div>
 
                 <div>
-                    
+
                 </div>
             </div>
         </div>
