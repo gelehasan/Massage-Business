@@ -6,6 +6,16 @@ const HomePage = ()=>{
     return(
         <div className="homePage">
             <Slider />
+
+            <div>
+                <div>
+        <p></p>
+                </div>
+
+                <div>
+                    
+                </div>
+            </div>
         </div>
     )
 }
