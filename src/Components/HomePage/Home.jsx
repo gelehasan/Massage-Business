@@ -9,9 +9,13 @@ const HomePage = ()=>{
 
             <div>
                 <div>
-        <p>Upptäck vårt breda
+        <h1>Upptäck vårt breda
 utbud av skräddarsydda
-massagebehandlingar</p>
+massagebehandlingar</h1>
+
+<p>
+Erfarenheter av värk och smärta kan ofta hindra oss från att vara på vår bästa nivå.
+</p>
                 </div>
 
                 <div>
