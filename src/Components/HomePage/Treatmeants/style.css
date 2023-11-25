@@ -27,6 +27,7 @@
 
 .treatMeantDescription{
     display: flex;
+    width: 100%;
     gap: 20px;
 }
 
@@ -51,6 +52,7 @@ margin: 0;
         flex-direction: column;
         border: 1px solid red;
         align-items: center;
+        gap: 0;
     }
   
 }
@@ -66,5 +68,24 @@ margin: 0;
         width:150px;
         height: 100px;
         margin: 0.2em;
+    }
+    .treatMeantDescription{
+    
+        position: relative;
+       
+    }
+    .treatMeantDescriptionCol img{
+        width: 70px;
+        height: 60px;
+
+    }
+
+  
+    .treatMeantDescriptionCol{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .treatMeantDescriptionCol p{
+        word-break: break-all;
     }
 }

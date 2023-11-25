@@ -8,9 +8,7 @@ const HomePage = ()=>{
     return(
         <div className="homePage">
             <Slider />
-
             <ShowCase />
-            
             <Treatments/>
        
         </div>
