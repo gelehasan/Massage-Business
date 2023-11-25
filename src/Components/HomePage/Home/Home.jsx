@@ -3,6 +3,7 @@ import "./homeStyle.css"
 import ShowCase from "../ServiceShowCase/ShowCase"
 import Treatments from "../Treatmeants/Treatmeants"
 import Massage from "../MassageServices/Massage"
+import Product from "../Products/Products"
 const HomePage = ()=>{
 
 
@@ -12,6 +13,7 @@ const HomePage = ()=>{
             <ShowCase />
             <Treatments/>
             <Massage/>
+            <Product />
        
         </div>
     )
