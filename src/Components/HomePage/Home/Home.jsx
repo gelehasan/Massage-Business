@@ -1,6 +1,7 @@
 import Slider from "../Slider/Slider"
 import "./homeStyle.css"
 import ShowCase from "../ServiceShowCase/ShowCase"
+import Treatments from "../Treatmeants/Treatmeants"
 const HomePage = ()=>{
 
 
@@ -10,6 +11,7 @@ const HomePage = ()=>{
 
             <ShowCase />
             
+            <Treatments/>
        
         </div>
     )

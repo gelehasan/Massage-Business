@@ -1,0 +1,46 @@
+.treatmentContainer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6em;
+   
+}
+.treatmentContainer h3{
+    margin: 0;
+}
+.treatmeantShowcase{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    margin-bottom: 5em;
+    margin: 0 auto;
+}
+.treatmeantShowcase img{
+    width:200px;
+    height: 130px;
+    margin: 0.5em;
+}
+
+
+.treatMeantDescription{
+    display: flex;
+    gap: 20px;
+}
+
+.treatMeantDescriptionCol{
+    display: flex;
+    width: 400px;
+    gap: 10px;
+   margin-top:2em ;
+    align-items: center;
+}
+.treatMeantDescriptionCol h3{
+margin: 0;
+}
+.treatMeantDescriptionCol img{
+    width: 100px;
+    height: 100px;
+}
