@@ -11,7 +11,7 @@
     margin: 0;
 }
 .treatmeantShowcase{
-
+ 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: fit-content;
@@ -43,4 +43,28 @@ margin: 0;
 .treatMeantDescriptionCol img{
     width: 100px;
     height: 100px;
+}
+
+
+@media (max-width:810px){
+    .treatMeantDescription{
+        flex-direction: column;
+        border: 1px solid red;
+        align-items: center;
+    }
+  
+}
+
+@media (max-width:682px){
+    .treatmeantShowcase{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:485px){
+    .treatmeantShowcase img{
+        width:150px;
+        height: 100px;
+        margin: 0.2em;
+    }
 }
