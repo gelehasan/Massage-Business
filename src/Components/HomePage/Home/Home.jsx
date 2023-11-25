@@ -2,6 +2,7 @@ import Slider from "../Slider/Slider"
 import "./homeStyle.css"
 import ShowCase from "../ServiceShowCase/ShowCase"
 import Treatments from "../Treatmeants/Treatmeants"
+import Massage from "../MassageServices/Massage"
 const HomePage = ()=>{
 
 
@@ -10,6 +11,7 @@ const HomePage = ()=>{
             <Slider />
             <ShowCase />
             <Treatments/>
+            <Massage/>
        
         </div>
     )
