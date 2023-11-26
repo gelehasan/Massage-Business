@@ -35,13 +35,13 @@ const Navbar = ()=>{
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>
                 <Link to={"/"} className="Nav-link"><li>Om Oss</li></Link>
-                <Link to={"/"} className="Nav-link" onClick={setServiceVisbility}><li>Tjänster ↓
+                <Link to={"/"} className="Nav-link" onClick={setServiceVisbility} ><li>Tjänster ↓
                         
                         {isServicesOn &&
                             <ul className="serviceLinks">
-                            <li className="serviceItem">Afrikaanas</li>
-                            <li className="serviceItem">Luisana</li>
-                            <li className="serviceItem">Massage</li>
+                            <li className="serviceItem" onClick={setServiceVisbility}>Afrikaanas</li>
+                            <li className="serviceItem" onClick={setServiceVisbility}>Luisana</li>
+                            <li className="serviceItem" onClick={setServiceVisbility}>Massage</li>
                         </ul>
                         }
                         
