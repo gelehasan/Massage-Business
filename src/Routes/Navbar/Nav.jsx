@@ -7,10 +7,15 @@ import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
 const Navbar = ()=>{
     const [isMenuOn, setIsMenuOn] = useState(false);
-
+    const [isServicesOn, setIsServiceson]= useState(false);
     const toggleMenu = ()=>{
 
         setIsMenuOn(!isMenuOn)
+    }
+
+    const setServiceVisbility = ()=>{
+
+        setIsServiceson(!isServicesOn)
     }
     return(
     <>
@@ -30,12 +35,16 @@ const Navbar = ()=>{
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>
                 <Link to={"/"} className="Nav-link"><li>Om Oss</li></Link>
-                <Link to={"/services"} className="Nav-link"><li>Tjänster ↓
-                        <ul className="serviceLinks">
+                <Link to={"/"} className="Nav-link" onClick={setServiceVisbility}><li>Tjänster ↓
+                        
+                        {isServicesOn &&
+                            <ul className="serviceLinks">
                             <li className="serviceItem">Afrikaanas</li>
                             <li className="serviceItem">Luisana</li>
                             <li className="serviceItem">Massage</li>
                         </ul>
+                        }
+                        
                     </li></Link>
                 <Link to={"/"} className="Nav-link"><li>Kontakta Oss</li></Link>
                 <li>+46739752503</li>
