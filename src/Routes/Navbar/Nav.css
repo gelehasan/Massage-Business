@@ -104,9 +104,9 @@
     }
     
     .openMenu .serviceLinks {
-        display: flex; /* Show when the menu is open for smaller screens */
-        flex-direction: column; /* Stack items vertically for smaller screens */
-        position: relative; /* Change position to relative for smaller screens */
+        display: flex; 
+        flex-direction: column; 
+        position: relative;
         width: 100%;
         align-items:flex-start;
         background-color: transparent;
