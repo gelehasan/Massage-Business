@@ -20,9 +20,7 @@ function App() {
        userInfo=  await getUserInformation (user.uid);
       
     } 
-
     console.log(userInfo)
-   // dispatch(SetUser(userInfo))
 
   });
   return unsubscribe;
