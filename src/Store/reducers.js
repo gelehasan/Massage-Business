@@ -1,14 +1,8 @@
 import { combineReducers } from "@reduxjs/toolkit";
+import { userReducer } from "./userReducer/userReducer";
 
-
-
-const User=(state, action)=>
-{
-
-    return "your mom"
-}
 
 
 export const rootReducer = combineReducers({
-    user:User
+    user:userReducer
 })
