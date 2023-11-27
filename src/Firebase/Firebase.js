@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import {doc, getDoc,getFirestore} from 'firebase/firestore';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { onAuthStateChanged } from "firebase/auth";
+import { signOut } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyD5QJYoQs5Kb0pG64g4fKyIMuMap8rID08",
   authDomain: "massage-ab398.firebaseapp.com",
@@ -37,6 +38,11 @@ export const SignInUser = async (email, password) => {
     
       return await signInWithEmailAndPassword(auth, email, password);
 };
+
+export const SignOutUser = async ()=> 
+{
+  return await signOut(auth)
+}
 
 export const onAuthStateChangedListener = (callback) =>
 onAuthStateChanged(auth, callback);

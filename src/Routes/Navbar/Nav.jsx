@@ -5,9 +5,13 @@ import { useState } from "react";
 import MenuIcon from "../../Assets/menu.svg";
 import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { SignOutUser } from "../../Firebase/Firebase";
 const Navbar = ()=>{
+    const currentUser = useSelector((state)=> state.user.currentUser);
     const [isMenuOn, setIsMenuOn] = useState(false);
     const [isServicesOn, setIsServiceson]= useState(false);
+ 
     const toggleMenu = ()=>{
 
         setIsMenuOn(!isMenuOn)
@@ -48,9 +52,9 @@ const Navbar = ()=>{
                     </li></Link>
                 <Link to={"/"} className="Nav-link"><li>Kontakta Oss</li></Link>
                 <li>+46739752503</li>
-
+              {currentUser !=null && currentUser.Admin==true && <button onClick={SignOutUser}>Sign out</button>}  
                 </ul>
-
+                    
             </div>
 
         </div>

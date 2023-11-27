@@ -9,18 +9,23 @@ import Services from './Components/Services/Services';
 import { onAuthStateChangedListener } from './Firebase/Firebase';
 import SignIn from './Components/SignIn/SignIn';
 import { getUserInformation } from './Firebase/Firebase';
+import { setUser } from './Store/userReducer/userActions';
+import { useDispatch } from 'react-redux';
 
 
 function App() {
 
+  const dispatch = useDispatch();
   useEffect( () => {
   const unsubscribe = onAuthStateChangedListener( async (user)=> {
     let userInfo;
     if (user) {  
        userInfo=  await getUserInformation (user.uid);
+
       
     } 
-    console.log(userInfo)
+
+    dispatch(setUser(userInfo))
 
   });
   return unsubscribe;

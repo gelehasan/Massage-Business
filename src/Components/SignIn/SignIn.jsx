@@ -3,12 +3,10 @@ import { useState, useEffect } from "react";
 //import { useSelector } from 'react-redux';
 import { SignInUser } from '../../Firebase/Firebase';
 import { useNavigate } from 'react-router-dom';
-
-
-
+import { useSelector } from 'react-redux';
 const SignIn = ()=>{
-  //  const {currentUser}= useSelector((state)=> state.user);
-  const [currentUser, setCurrentUser] = useState()
+  const {currentUser}= useSelector((state)=> state.user);
+
     const [inputFields, setInputFields]= useState();
 
     const Navigate = useNavigate();

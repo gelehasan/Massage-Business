@@ -5,7 +5,7 @@ const InitialUserState={
     currentUser:null
 }
 
-const userTypes={
+export const userTypes={
     setCurrentUser:"setCurrentUser"
 }
 
