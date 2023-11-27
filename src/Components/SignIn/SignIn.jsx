@@ -1,7 +1,7 @@
 import './style.css';
 import { useState, useEffect } from "react";
 //import { useSelector } from 'react-redux';
-
+import { SignInUser } from '../../Firebase/Firebase';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -28,10 +28,11 @@ const SignIn = ()=>{
         event.preventDefault();
         let { email, password } = inputFields;
         try {
-       // await SignInUser(email, password);
+       await SignInUser(email, password);
+     
+
         } catch (error) {
-        let errorResponse = error.message.replace("Firebase:", "");
-       
+            console.log(error)
         }
     };
   
