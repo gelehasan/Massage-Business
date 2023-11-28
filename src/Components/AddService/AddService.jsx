@@ -18,6 +18,10 @@ const AddService = ()=>{
             <input type="text" name="info2" />
 
 
+            <label>Vad är special om servicen</label>
+            <input type="text" name="serviceSpecial"/>
+
+
             </form>
         </div>
     )
