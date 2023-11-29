@@ -33,20 +33,20 @@ const AddService = () => {
   };
 
   return (
-    <div>
-      <form>
+    <div className="form-container">
+      <form className="service-form">
         <label>Title</label> <br />
         <input id="title" name="title" />
         <br />
 
-        <label>information om servicen</label>
+        <label>Information om servicen</label>
         <br />
-        <label> Paragrph 1</label>
+        <label>Paragrph 1</label>
         <br />
         <input type="text" name="info1" />
         <br />
 
-        <label> Paragrph 2</label>
+        <label>Paragrph 2</label>
         <br />
         <input type="text" name="info2" />
         <br />
@@ -72,8 +72,12 @@ const AddService = () => {
 
         <label>Image of Service</label>
         <br />
-        <input type="text" name="imageOfService" placeholder="Image of Service" />
-        <label> Mer information 1</label>
+        <input
+          type="text"
+          name="imageOfService"
+          placeholder="Image of Service"
+        />
+        <label>Mer information 1</label>
         <br />
         <input type="text" name="merinfo" placeholder="Mer information" />
 
@@ -88,12 +92,21 @@ const AddService = () => {
               type="text"
               value={item.value}
               onChange={(e) => handleOtherListChange(item.id, e.target.value)}
-            /><br/>
-
-            <label>Bild på tjänsten</label> <br/>
-            <input type="serviceImage" name="serviceImage" placeholder="service Image"/><br/>
+            />
+            <br />
+            
           </div>
         ))}
+
+<label>Bild på tjänsten</label> <br />
+            <input
+              type="text"
+              name="serviceImage"
+              placeholder="Service Image"
+            />
+            <br />
+
+            <button type="submit">Submit</button>
       </form>
     </div>
   );

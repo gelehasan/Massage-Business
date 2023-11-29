@@ -39,7 +39,7 @@ const Navbar = ()=>{
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>
                 <Link to={"/"} className="Nav-link"><li>Om Oss</li></Link>
-                <Link to={"/"} className="Nav-link" onClick={setServiceVisbility} ><li>Tjänster ↓
+                <Link to={"#"} className="Nav-link" onClick={setServiceVisbility} ><li>Tjänster ↓
                         
                         {isServicesOn &&
                             <ul className="serviceLinks">
