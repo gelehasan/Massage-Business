@@ -5,9 +5,17 @@ const AddService = () => {
   const [listor, setListor] = useState([]);
   const [listCount, setListCount] = useState(0);
 
+  const [otherList, setOtherList] = useState([]);
+  const [otherListCount, setOtherListCount] = useState(0);
+
   const handleAddLista = () => {
     setListor([...listor, { id: listCount, value: "" }]);
     setListCount(listCount + 1);
+  };
+
+  const handleAddOtherList = () => {
+    setOtherList([...otherList, { id: otherListCount, value: "" }]);
+    setOtherListCount(otherListCount + 1);
   };
 
   const handleListaChange = (id, value) => {
@@ -15,6 +23,13 @@ const AddService = () => {
       item.id === id ? { ...item, value } : item
     );
     setListor(updatedListor);
+  };
+
+  const handleOtherListChange = (id, value) => {
+    const updatedOtherList = otherList.map((item) =>
+      item.id === id ? { ...item, value } : item
+    );
+    setOtherList(updatedOtherList);
   };
 
   return (
@@ -54,7 +69,28 @@ const AddService = () => {
             />
           </div>
         ))}
-       
+
+        <label>Image of Service</label>
+        <br />
+        <input type="text" name="imageOfService" placeholder="Image of Service" />
+        <label> Mer information 1</label>
+        <br />
+        <input type="text" name="merinfo" placeholder="Mer information" />
+
+        {/* Another list here */}
+        <label>Other List</label> <br />
+        <button type="button" onClick={handleAddOtherList}>
+          Add Item
+        </button>
+        {otherList.map((item) => (
+          <div key={item.id}>
+            <input
+              type="text"
+              value={item.value}
+              onChange={(e) => handleOtherListChange(item.id, e.target.value)}
+            />
+          </div>
+        ))}
       </form>
     </div>
   );
