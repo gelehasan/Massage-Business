@@ -11,7 +11,7 @@ import SignIn from './Components/SignIn/SignIn';
 import { getUserInformation } from './Firebase/Firebase';
 import { setUser } from './Store/userReducer/userActions';
 import { useDispatch } from 'react-redux';
-
+import AddService from './Components/AddService/AddService';
 
 function App() {
 
@@ -39,6 +39,7 @@ function App() {
       <Route index element={<HomePage/>}/>
       <Route path='/Services' element={<Services/>}/>
       <Route path='/Admin/SignIn' element={<SignIn/>}/>
+      <Route path='/AddService' element={<AddService />}/>
       </Route>
       </Routes>
     </div>

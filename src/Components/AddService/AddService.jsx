@@ -7,22 +7,25 @@ const AddService = ()=>{
         <div>
             <form>
 
-            <label>Title</label>
-            <input id="title" name="title"/>
+            <label>Title</label> <br/>
+            <input id="title" name="title"/><br/>
 
-            <label>information om servicen</label>
-            <label> Paragrph 1</label>
-            <input type="text" name="info1" />
+            <label>information om servicen</label><br/>
+            <label> Paragrph 1</label><br/>
+            <input type="text" name="info1" /><br/>
 
-            <label> Paragrph 2</label>
-            <input type="text" name="info2" />
+            <label> Paragrph 2</label><br/>
+            <input type="text" name="info2" /><br/>
 
 
-            <label>Vad är special om servicen</label>
-            <input type="text" name="serviceSpecial"/>
+            <label>Vad är special om servicen</label><br/>
+            <input type="text" name="serviceSpecial"/><br/>
 
 
             </form>
         </div>
     )
 }
+
+
+export default AddService;
