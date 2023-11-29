@@ -88,7 +88,10 @@ const AddService = () => {
               type="text"
               value={item.value}
               onChange={(e) => handleOtherListChange(item.id, e.target.value)}
-            />
+            /><br/>
+
+            <label>Bild på tjänsten</label> <br/>
+            <input type="serviceImage" name="serviceImage" placeholder="service Image"/><br/>
           </div>
         ))}
       </form>
