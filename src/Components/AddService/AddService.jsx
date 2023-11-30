@@ -123,6 +123,15 @@ const AddService = () => {
   onChange={(e) => handleInputChange(e.target.name, e.target.value)}
 />
 <br />
+
+<label>Service Image</label> <br />
+<input
+  id="serviceImage"
+  name="serviceImage"
+  value={formData.serviceImage}
+  onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+/>
+<br />
         <button type="submit">Submit</button>
       </form>
     </div>
