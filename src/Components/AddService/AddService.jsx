@@ -115,7 +115,14 @@ const AddService = () => {
   onChange={(e) => handleInputChange(e.target.name, e.target.value)}
 />
 <br />
-
+<label>Ovrigt Information</label> <br />
+<textarea
+  id="ovrigtInfomation"
+  name="ovrigtInfomation"
+  value={formData.ovrigtInfomation}
+  onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+/>
+<br />
         <button type="submit">Submit</button>
       </form>
     </div>
