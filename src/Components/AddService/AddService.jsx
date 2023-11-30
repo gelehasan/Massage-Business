@@ -91,6 +91,31 @@ const AddService = () => {
 </button>
 <br />
 
+
+
+<label>Other List</label> <br />
+{formData.otherList.map((item) => (
+  <div key={item.id}>
+    <input
+      value={item.value}
+      onChange={(e) => handleOtherListChange(item.id, e.target.value)}
+    />
+  </div>
+))}
+<button type="button" onClick={handleAddOtherList}>
+  Add Other List Item
+</button>
+<br />
+
+<label>Ovrigt Information Title</label> <br />
+<input
+  id="ovrigtInfomationTitle"
+  name="ovrigtInfomationTitle"
+  value={formData.ovrigtInfomationTitle}
+  onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+/>
+<br />
+
         <button type="submit">Submit</button>
       </form>
     </div>
