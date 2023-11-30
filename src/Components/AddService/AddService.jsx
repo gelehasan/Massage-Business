@@ -35,11 +35,14 @@ const AddService = () => {
   return (
     <div className="form-container">
       <form className="service-form">
-        <label>Title</label> <br />
-        <input id="title" name="title" />
+        <label>Service Title</label> <br />
+        <input id="title" name="serviceTitle" />
         <br />
 
-        <label>Information om servicen</label>
+        <label>Rubrik</label>
+        <br/>
+        <input type="text" name="rubrik" />
+       
         <br />
         <label>Paragrph 1</label>
         <br />
@@ -53,18 +56,18 @@ const AddService = () => {
 
         <label>Vad är special om servicen</label>
         <br />
-        <input type="text" name="serviceSpecial" />
+        <input type="text" name="specialOmServicen" />
         <br />
 
         <label>Listor</label> <br />
         <button type="button" onClick={handleAddLista}>
-          Add a Lista
+        Lägg listor för vad är special om servicen
         </button>
         {listor.map((item) => (
           <div key={item.id}>
             <input
               type="text"
-              value={item.value}
+              value={item.value} 
               onChange={(e) => handleListaChange(item.id, e.target.value)}
             />
           </div>
@@ -77,14 +80,15 @@ const AddService = () => {
           name="imageOfService"
           placeholder="Image of Service"
         />
-        <label>Mer information 1</label>
-        <br />
-        <input type="text" name="merinfo" placeholder="Mer information" />
+    
+       
+       <label>övrigt information title</label> <br />
+        <input type="text" name="ovrigtInfomationTitle"/>
 
-        {/* Another list here */}
-        <label>Other List</label> <br />
+        <label>övrigt information</label> <br />
+        <input type="text" name="ovrigtInfomation"/>
         <button type="button" onClick={handleAddOtherList}>
-          Add Item
+          Lägg listor för övrigt information
         </button>
         {otherList.map((item) => (
           <div key={item.id}>
