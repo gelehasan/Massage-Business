@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-
+import { postFormDataToDatabase } from "../../Firebase/Firebase";
 const AddService = () => {
   const [formData, setFormData] = useState({
     serviceTitle: "",
@@ -59,7 +59,8 @@ const AddService = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
- 
+    
+    postFormDataToDatabase(formData)
     console.log(formData);
   };
 
