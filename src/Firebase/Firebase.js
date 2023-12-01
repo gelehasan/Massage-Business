@@ -89,7 +89,6 @@ export const AddNewService = async (formData) => {
   
 
 if (!serviceSnapshot.exists()) {
-    const createdAt = new Date();
     
     try {
     
@@ -113,8 +112,6 @@ if (!serviceSnapshot.exists()) {
     console.log("error creating the user", error.message);
     }
     }
-    // Return the user object with the updated displayName property
-    //if the create user runs successful
-    // It retur//along with other properties like uid, email, etc.
+
     
   };
