@@ -1,6 +1,5 @@
 import './style.css';
 import { useState, useEffect } from "react";
-//import { useSelector } from 'react-redux';
 import { SignInUser } from '../../Firebase/Firebase';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
