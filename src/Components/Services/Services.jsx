@@ -1,19 +1,24 @@
 import serviceBackGround from "../../Assets/massageimg.png";
 import "./serviceStyle.css";
-
-
-const Services = ()=>{
-
+import { useSelector } from "react-redux";
+import { getAllServices } from "../../Store/services/serviceSelector";
+import { useState } from "react";
+import { useEffect } from "react";
+const Services = ({AllServices})=>{
+      const [selectedService, setSelectedService] = useState(AllServices[0])
+ 
+    const {data}=selectedService;
+  
+    console.log(data)
     return(
         <div className="serviceContainer">
             <div className="serviceHeader">
                 <img src={serviceBackGround}/>
 
                 <div className="details">
-                    <h3>AFRIKANSK SIGNATUR</h3>
-                    <p>Vårt uppdrag är att vägleda dig på denna resa av självförverkligande, hjälpa dig att bryta dig fri från begränsningar och ge dig möjlighet att omfamna ditt sanna jag</p>
-
-                    <span>Home</span> <span>»</span> <span>Tjänster</span> <span>»</span> <span>Afrikansk Signatur</span>
+                    <h3>{data.name}</h3>
+                <p>{data.serviceBackgrundText}</p>
+                    <span>Home</span> <span>»</span> <span>{data.name}</span> <span>»</span> <span>Afrikansk Signatur</span>
 
                 </div>
             </div>
@@ -21,48 +26,47 @@ const Services = ()=>{
  <div className="serviceContent">
       
       <div className="contetLeft">
-        <h2> Vad är AFROROOTS SPECIAL? </h2>
+        <h2> {data.rubrik}</h2>
         
         <p>
-          Förbättrar blodcirkulationen, minskar högt blodtryck och hjälper till med sömnstörningar. Massagen består av flödande slag över hela kroppens längd, passiva ledrörelser och djupt strukturellt arbete på muskler och leder. 
- </p>
+          {data.info1}
+       </p>
         <p>
-Genom medveten beröring skärps den sensoriska uppfattningen av kroppen och en harmonisk balans skapas. På detta sätt kan fysiska eller energiska blockeringar av klienterna släppas. 
-        </p>
+        {data.info2}
+          </p>
         
         
         <h2>
-          Hur verkar AFROROOTS SPECIAL? 
+        {data.rubrik2} 
         </h2>
         
         <p>
-          AfroRoots Signaturmassage erbjuder den ultimata   upplevelsen för att höja humöret och bekämpa jetlag, dålig cirkulation, utbrändhet och trötthet. 
-        </p>
+      {data.info3}
+       </p>
         
         <ul>
-          
-          <li> Särskilt utformad för resenärer, är detta en perfekt kombination av östliga och västerländska tekniker som maximerar din komfortnivå. </li>
-          
-          <li> Genom användning av stretching och palming-tekniker lyfts och återupplivas kroppen</li>
-          <li>
-            Vi använder noggrant utvalda ekologiska oljor från Afrika som ger antingen en lugnande eller föryngrande effekt. Denna unika blandning tillför fördelarna med djupvävnadsmassage, aromaterapimassage och inkluderar även inslag av Rungu-massage. Resultatet är ökad energinivå, återställd smidighet, lindrade muskelspänningar och minskad stress
-          </li>
+        {
+          data.listor.map((list)=>{
+            const {value}= list;
+           return( <li>{value}</li>)
+          })
+        }
         </ul>
         
         
-        <img className="servicePicture" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <img className="servicePicture" src={data.imageOfService}/>
       <p>
-          AfroRoots Signaturmassage erbjuder den ultimata   upplevelsen för att höja humöret och bekämpa jetlag, dålig cirkulation, utbrändhet och trötthet. 
-        </p>
+        {data.ovrigtInfomation}
+      </p>
         
         <ul>
           
-          <li> Särskilt utformad för resenärer, är detta en perfekt kombination av östliga och västerländska tekniker som maximerar din komfortnivå. </li>
-          
-          <li> Genom användning av stretching och palming-tekniker lyfts och återupplivas kroppen</li>
-          <li>
-            Vi använder noggrant utvalda ekologiska oljor från Afrika som ger antingen en lugnande eller föryngrande effekt. Denna unika blandning tillför fördelarna med djupvävnadsmassage, aromaterapimassage och inkluderar även inslag av Rungu-massage. Resultatet är ökad energinivå, återställd smidighet, lindrade muskelspänningar och minskad stress
-          </li>
+        {
+          data.otherList.map((list)=>{
+            const {value}= list;
+           return( <li>{value}</li>)
+          })
+        }
         </ul>
       </div>
       
@@ -71,7 +75,7 @@ Genom medveten beröring skärps den sensoriska uppfattningen av kroppen och en 
         <div className="timeBooking">
     <h2> Afrikansk Signatur</h2>
 <p>Boka din tid nu hos Aforoots of Sweden Massage & Cosmetics </p>
-<b> 60 min - 650kr</b>
+<b>{data.prisOchTid}</b>
 <button className="bokanNu">Boka Nu</button>
         </div>
         <h3>Arbetstid</h3>
@@ -96,7 +100,7 @@ Lördag 09:00 - 19:00 09:00 - 15:00 Söndag är stängt
         <div className="serviceExample Picture">
 
             <h2>Bild på tjänsten</h2>
-            <img className="servicePicture" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <img className="servicePicture" src={data.serviceImage}/>
 
         </div>
       </div>

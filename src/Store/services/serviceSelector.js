@@ -11,6 +11,27 @@ export const ServicesSlice = createSelector(
 
 export const getAllServices = createSelector(
     [ServicesSlice],
-    (Services)=> Services.serviceReducer
+    (Services)=> Services.Services
+)
+
+
+
+export const Titles = createSelector(
+    [getAllServices],
+    (Services)=>{
+
+
+
+
+      const Titles= [];
+
+        Services.map((service)=>{
+            Titles.push(service.id);
+        })
+
+
+        return Titles;
+
+    }
 )
 

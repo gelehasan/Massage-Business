@@ -7,8 +7,12 @@ import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { SignOutUser } from "../../Firebase/Firebase";
+import { Titles } from "../../Store/services/serviceSelector";
 const Navbar = ()=>{
     const currentUser = useSelector((state)=> state.user.currentUser);
+    const serviceTitles = useSelector(Titles);
+
+
     const [isMenuOn, setIsMenuOn] = useState(false);
     const [isServicesOn, setIsServiceson]= useState(false);
  
@@ -42,10 +46,17 @@ const Navbar = ()=>{
                 <Link to={"#"} className="Nav-link" onClick={setServiceVisbility} ><li>Tjänster ↓
                         
                         {isServicesOn &&
+
+                           
                             <ul className="serviceLinks">
-                            <li className="serviceItem" onClick={setServiceVisbility}>Afrikaanas</li>
-                            <li className="serviceItem" onClick={setServiceVisbility}>Luisana</li>
-                            <li className="serviceItem" onClick={setServiceVisbility}>Massage</li>
+                                {
+                                    serviceTitles.map((service,index)=>{
+                                   return( 
+                                   <Link className="Nav-link" to={`Services/${index}`} key={service}> <li  className="serviceItem " onClick={setServiceVisbility}>{service}</li>
+                                   </Link>)
+                                    })
+                                }
+ 
                         </ul>
                         }
                         
