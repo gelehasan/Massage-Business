@@ -12,17 +12,34 @@ import { setUser } from './Store/userReducer/userActions';
 import { useDispatch } from 'react-redux';
 import AddService from './Components/AddService/AddService';
 import DashBoard from './Routes/AdminDashBoard/Dashboard';
+import { getAllServicesDetails } from './Firebase/Firebase';
+import { setServiceData,setServiceLoadingState } from './Store/services/serviceActions';
+
 
 function App() {
 
   const dispatch = useDispatch();
+
+  useEffect(()=>{
+    const LoadServices = async ()=>{
+      try {
+        const AllService = await getAllServicesDetails()
+         dispatch(setServiceData(AllService))
+      } catch (error) {
+        console.log(error)
+      }
+
+      dispatch(setServiceLoadingState(false))
+    }
+    LoadServices()
+  },[])
+
+  
   useEffect( () => {
   const unsubscribe = onAuthStateChangedListener( async (user)=> {
     let userInfo;
     if (user) {  
        userInfo=  await getUserInformation (user.uid);
-
-      
     } 
 
     dispatch(setUser(userInfo))

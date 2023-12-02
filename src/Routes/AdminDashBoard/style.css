@@ -4,7 +4,8 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid red;
+    border: 10px solid red;
+
   }
   
   .dashboard-links {
@@ -17,8 +18,32 @@
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 3px;
   }
-  
+  .AvaiableServices{
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+    height: 30px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+.AvaiableServices h4
+{
+    margin: 0;
+}
+  .serviceCrud{
+    display: flex;
+    gap: 12px;
+  }
+
+  .serviceCrud h3{
+    margin: 0;
+    padding: 0;
+  }
   /* Media query for smaller screens */
   @media (max-width: 600px) {
     .dashboard-links {

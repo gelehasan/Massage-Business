@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {doc, getDoc,getFirestore,collection,addDoc} from 'firebase/firestore';
+import {doc, getDoc,getFirestore,collection,addDoc,getDocs} from 'firebase/firestore';
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
@@ -85,3 +85,34 @@ if (!serviceSnapshot.exists()) {
 
 
   };
+
+
+  export const getServiceInfomartion= async (serviceName)=>{
+    const serviceDocRef = doc(db, "Services", serviceName);
+    const serviceSnapshot = await getDoc(serviceDocRef);
+    const servviceData = await serviceSnapshot.data();
+     return servviceData    
+  }
+
+
+  export const getAllServicesDetails = async () => {
+    const servicesCollectionRef = collection(db, "Services");
+  
+    try {
+      const servicesSnapshot = await getDocs(servicesCollectionRef);
+  
+      const services = servicesSnapshot.docs.map((doc) => {
+        return {
+          id: doc.id,
+          data: doc.data(),
+        };
+      });
+  
+      return services
+    } catch (error) {
+      console.error("Error fetching services", error.message);
+      throw error;
+    }
+  };
+
+
