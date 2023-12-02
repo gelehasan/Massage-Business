@@ -1,0 +1,59 @@
+/* Add this in your stylesheet (style.css or another file) */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid red;
+
+  }
+  
+  .dashboard-links {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 3px;
+  }
+  .AvaiableServices{
+    position: relative;
+    display: flex;
+    font-size: 1.2rem;
+    height: 30px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+  }
+.AvaiableServices h4
+{
+    margin: 0;
+}
+  .serviceCrud{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+.serviceCrud button{
+    border: none;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .dashboard-links {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  

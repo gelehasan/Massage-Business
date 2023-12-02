@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {doc, getDoc,getFirestore,collection,addDoc,getDocs} from 'firebase/firestore';
+import { deleteDoc } from "firebase/firestore";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { onAuthStateChanged } from "firebase/auth";
 import { signOut } from "firebase/auth";
@@ -111,6 +112,24 @@ if (!serviceSnapshot.exists()) {
       return services
     } catch (error) {
       console.error("Error fetching services", error.message);
+      throw error;
+    }
+  };
+
+
+  export const removeService = async (serviceName) => {
+    try {
+      const serviceDocRef = doc(db, "Services", serviceName);
+      const serviceSnapshot = await getDoc(serviceDocRef);
+  
+      if (serviceSnapshot.exists()) {
+        await deleteDoc(serviceDocRef);
+        console.log(`Service ${serviceName} removed successfully.`);
+      } else {
+        console.log(`Service ${serviceName} not found.`);
+      }
+    } catch (error) {
+      console.error("Error removing service", error.message);
       throw error;
     }
   };
