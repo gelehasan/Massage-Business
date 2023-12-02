@@ -55,8 +55,15 @@ body{
   .serviceItem {
     padding: 5px; 
     border-radius: 5px;
-  }
+}
+
+.signOut{
+  height: 23px;
+  background-color: darkred;
+  color: white;
   
+  border: none;
+}
 @media (max-width:741px){
     .navLogo{
         width: 100%;
@@ -122,3 +129,4 @@ body{
         right: 0;
     }
 }
+

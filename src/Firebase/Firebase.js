@@ -74,6 +74,7 @@ if (!serviceSnapshot.exists()) {
       ovrigtInfomation: formData.ovrigtInfomation,
       otherList: formData.otherList,
       serviceImage: formData.serviceImage,
+      prisOchTid:formData.prisOchTid,
     });
 
     

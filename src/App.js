@@ -4,7 +4,6 @@ import Navbar from './Routes/Navbar/Nav';
 import HomePage from './Components/HomePage/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
-import Slider from './Components/HomePage/Slider/Slider';
 import Services from './Components/Services/Services';
 import { onAuthStateChangedListener } from './Firebase/Firebase';
 import SignIn from './Components/SignIn/SignIn';
@@ -12,6 +11,7 @@ import { getUserInformation } from './Firebase/Firebase';
 import { setUser } from './Store/userReducer/userActions';
 import { useDispatch } from 'react-redux';
 import AddService from './Components/AddService/AddService';
+import DashBoard from './Routes/AdminDashBoard/Dashboard';
 
 function App() {
 
@@ -40,6 +40,7 @@ function App() {
       <Route path='/Services' element={<Services/>}/>
       <Route path='/Admin/SignIn' element={<SignIn/>}/>
       <Route path='/AddService' element={<AddService />}/>
+      <Route path='/DashboardLinks' element={<DashBoard/>}/>
       </Route>
       </Routes>
     </div>

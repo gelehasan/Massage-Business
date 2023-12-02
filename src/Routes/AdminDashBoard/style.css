@@ -1,0 +1,29 @@
+/* Add this in your stylesheet (style.css or another file) */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid red;
+  }
+  
+  .dashboard-links {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .dashboard-links {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  

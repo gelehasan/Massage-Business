@@ -51,8 +51,12 @@ const Navbar = ()=>{
                         
                     </li></Link>
                 <Link to={"/"} className="Nav-link"><li>Kontakta Oss</li></Link>
+               {currentUser !=null && currentUser.Admin==true &&  
+               <Link to={"/DashboardLinks"} className="Nav-link"><li >Admin DashBoard</li></Link>} 
                 <li>+46739752503</li>
-              {currentUser !=null && currentUser.Admin==true && <button onClick={SignOutUser}>Sign out</button>}  
+              {currentUser !=null && currentUser.Admin==true && 
+                <button className="signOut" onClick={SignOutUser}>Sign out</button>
+               }  
                 </ul>
                     
             </div>

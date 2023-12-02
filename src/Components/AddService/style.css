@@ -18,11 +18,15 @@
     height: 30px;
   }
   
-  button {
-    margin-top: 10px;
-    padding: 5px;
-    cursor: pointer;
-  }
+
   
+
+.btnLists{
+
+height: 40px;
+font-size: 1.09rem;
+background-color: azure;
+border: none;
+}
 
   

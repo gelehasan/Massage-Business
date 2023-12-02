@@ -16,6 +16,7 @@ const AddService = () => {
     ovrigtInfomation: "",
     otherList: [],
     serviceImage: "",
+    prisOchTid:""
   });
 
   const handleInputChange = (name, value) => {
@@ -152,7 +153,7 @@ const AddService = () => {
             />
           </div>
         ))}
-        <button type="button" onClick={handleAddLista}>
+        <button type="button" onClick={handleAddLista} className="btnLists">
           Add List Item
         </button>
         <br />
@@ -188,7 +189,7 @@ const AddService = () => {
     />
   </div>
 ))}
-<button type="button" onClick={handleAddOtherList}>
+<button type="button" onClick={handleAddOtherList} className="btnLists">
   Add Other List Item
 </button>
 <br />
@@ -201,6 +202,18 @@ const AddService = () => {
   name="serviceImage"
   value={formData.serviceImage}
   onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+/>
+<br />
+
+
+
+<label>Pris Och tid</label> <br />
+<input
+  id="prisOchTid"
+  name="prisOchTid"
+  value={formData.prisOchTid}
+  onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+  placeholder="Ex: 60min - 650kr"
 />
 <br />
         <button type="submit">Submit</button>
