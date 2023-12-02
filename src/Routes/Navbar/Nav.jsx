@@ -1,5 +1,5 @@
 import MassageIcon from "../../Assets/AFROICOVN.png"
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./Nav.css"
 import { useState } from "react";
 import MenuIcon from "../../Assets/menu.svg";
@@ -7,11 +7,13 @@ import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { SignOutUser } from "../../Firebase/Firebase";
+import { useNavigate } from "react-router-dom";
 import { Titles } from "../../Store/services/serviceSelector";
 const Navbar = ()=>{
     const currentUser = useSelector((state)=> state.user.currentUser);
     const serviceTitles = useSelector(Titles);
 
+    const Navgiate = useNavigate()
 
     const [isMenuOn, setIsMenuOn] = useState(false);
     const [isServicesOn, setIsServiceson]= useState(false);
@@ -21,10 +23,17 @@ const Navbar = ()=>{
         setIsMenuOn(!isMenuOn)
     }
 
-    const setServiceVisbility = ()=>{
-
-        setIsServiceson(!isServicesOn)
+    const setServiceVisbility = (isLink, index)=>{
+      
+            setIsServiceson(!isServicesOn)
+        
+       
     }
+    const handleServiceClick = (index) => {
+        Navgiate(`Services/${index}`);
+        window.location.reload()
+      };
+    
     return(
     <>
         <div className="navContainer">
@@ -50,11 +59,16 @@ const Navbar = ()=>{
                            
                             <ul className="serviceLinks">
                                 {
-                                    serviceTitles.map((service,index)=>{
-                                   return( 
-                                   <Link className="Nav-link" to={`Services/${index}`} key={service}> <li  className="serviceItem " onClick={setServiceVisbility}>{service}</li>
-                                   </Link>)
-                                    })
+                                    serviceTitles.map((service,index)=>(
+                                   
+                   <Link key={index}  to={"#"} className="Nav-link" onClick={()=>handleServiceClick(index)}>           
+                       <li  className="serviceItem " 
+                    
+                               
+                                    >{service}</li>
+                                 </Link>  
+                                   
+                                    ))
                                 }
  
                         </ul>

@@ -53,7 +53,7 @@ function App() {
       <Routes>
       <Route path='/' element={  <Navbar/>} > 
       <Route index element={<HomePage/>}/>
-      <Route path='/Services' element={<ServicePage/>}/>
+      <Route path='/Services/:serviceId' element={<ServicePage/>}/>
       <Route path='/Admin/SignIn' element={<SignIn/>}/>
       <Route path='/AddService' element={<AddService />}/>
       <Route path='/DashboardLinks' element={<DashBoard/>}/>

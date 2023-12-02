@@ -4,8 +4,11 @@ import { useSelector } from "react-redux";
 import { getAllServices } from "../../Store/services/serviceSelector";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 const Services = ({AllServices})=>{
-      const [selectedService, setSelectedService] = useState(AllServices[0])
+  const {serviceId} = useParams();
+      const [selectedService, setSelectedService] = useState(AllServices[serviceId])
+  
  
     const {data}=selectedService;
   
@@ -18,7 +21,7 @@ const Services = ({AllServices})=>{
                 <div className="details">
                     <h3>{data.name}</h3>
                 <p>{data.serviceBackgrundText}</p>
-                    <span>Home</span> <span>»</span> <span>{data.name}</span> <span>»</span> <span>Afrikansk Signatur</span>
+                    <span>Home</span> <span>»</span> <span>Tjänster</span> <span>»</span> <span>{data.name}</span>
 
                 </div>
             </div>
