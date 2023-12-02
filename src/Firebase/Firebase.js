@@ -60,17 +60,17 @@ export const AddNewService = async (formData) => {
 if (!serviceSnapshot.exists()) {
     
     try {
-    
+
     await setDoc(serviceDocRef, {
       name: formData.serviceTitle, 
-      serviceTitle: formData.serviceTitle,
+      serviceBackgrundText: formData.serviceBackgrundText,
       rubrik: formData.rubrik,
       info1: formData.info1,
       info2: formData.info2,
-      specialOmServicen: formData.specialOmServicen,
+      rubrik2: formData.rubrik2,
+      info3: formData.info3,
       listor: formData.listor,
       imageOfService: formData.imageOfService,
-      ovrigtInfomationTitle: formData.ovrigtInfomationTitle,
       ovrigtInfomation: formData.ovrigtInfomation,
       otherList: formData.otherList,
       serviceImage: formData.serviceImage,
