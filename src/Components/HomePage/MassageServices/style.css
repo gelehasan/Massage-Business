@@ -2,11 +2,11 @@
   
     width: 90%;
     margin: 0 auto;
-    border: 1px solid black;
+ 
     height: fit-content;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin-top: 3em;
+    margin-top: 5em;
 
     gap: 10px;
     

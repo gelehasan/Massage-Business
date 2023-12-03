@@ -19,7 +19,13 @@
   }
   
 
-  
+  .addService{
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
 .btnLists{
 

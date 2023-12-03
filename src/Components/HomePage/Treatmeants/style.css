@@ -50,7 +50,7 @@ margin: 0;
 @media (max-width:810px){
     .treatMeantDescription{
         flex-direction: column;
-        border: 1px solid red;
+       
         align-items: center;
         gap: 0;
     }

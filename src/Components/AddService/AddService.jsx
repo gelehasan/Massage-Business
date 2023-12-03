@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./style.css";
 import { postFormDataToDatabase } from "../../Firebase/Firebase";
 import { AddNewService } from "../../Firebase/Firebase";
+import { useSelector } from "react-redux";
 const AddService = () => {
+  const currentUser = useSelector((state)=> state.user.currentUser)
+  console.log(currentUser)
   const [formData, setFormData] = useState({
     serviceTitle: "",
     serviceBackgrundText:"",
@@ -63,7 +66,11 @@ const AddService = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    AddNewService(formData)
+    if(currentUser && currentUser.Admin==true){
+      AddNewService(formData)
+
+    }
+    
     console.log(formData);
   };
 
@@ -216,7 +223,7 @@ const AddService = () => {
   placeholder="Ex: 60min - 650kr"
 />
 <br />
-        <button type="submit">Submit</button>
+        <button className="addService" type="submit">Submit</button>
       </form>
     </div>
   );

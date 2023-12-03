@@ -7,7 +7,7 @@ const Product = ()=>{
 
         <div className="productContainer">
             <div className="productDetail"> 
-            <h3> Produkter Konsten Av Naturlig Skönhet </h3>
+            <h1> Produkter Konsten Av Naturlig Skönhet </h1>
     <p> Upptäck vårt sortiment av internationella produkter som vi erbjuder i vår butik.</p>
             </div>
         

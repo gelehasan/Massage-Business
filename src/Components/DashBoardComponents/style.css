@@ -4,7 +4,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border: 10px solid red;
+    
 
   }
   
@@ -26,7 +26,7 @@
     font-size: 1.2rem;
     height: 30px;
     background-color: black;
-    border: 1px solid white;
+    
     color: white;
     justify-content: space-between;
     align-items: center;

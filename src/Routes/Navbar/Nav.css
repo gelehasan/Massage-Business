@@ -83,7 +83,7 @@ body{
     .navContainer{
      margin: 0;
      width: 100%;
-     border: 1px solid black;
+
    /* padding: 15px 15px 0px 15px;*/  
     }
 
@@ -102,7 +102,7 @@ body{
         position: absolute;
         top: 100%;
         right: 0%;
-        border: 1px solid red;
+  
         background-color: black;
         transition: right 0.3s ease-in-out;
         right: -110%;
