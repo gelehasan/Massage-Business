@@ -35,3 +35,24 @@ export const Titles = createSelector(
     }
 )
 
+
+
+export const ServicesBooking = createSelector(
+    [getAllServices],
+    (Services)=>{
+
+
+
+
+      const Titles= [];
+
+        Services.map((service)=>{
+            const {data}= service;
+            Titles.push(`${service.id} ${data.prisOchTid}`);
+        })
+
+
+        return Titles;
+
+    }
+)

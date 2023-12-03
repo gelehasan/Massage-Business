@@ -40,8 +40,8 @@ const Navbar = ()=>{
             
             
             <div className="navLogo">
-                <img src={MassageIcon} className="Logo"/>
-
+              <Link to={"/"} >  <img src={MassageIcon} className="Logo "/>
+              </Link> 
                 <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
                     className="Menus"
                 />
@@ -51,7 +51,7 @@ const Navbar = ()=>{
 
                 <ul>
                 <Link to={"/"} className="Nav-link"><li>Våra butiker</li></Link>
-                <Link to={"/"} className="Nav-link"><li>Om Oss</li></Link>
+                <Link to={"/OmOss"} className="Nav-link"><li>Om Oss</li></Link>
                 <Link to={"#"} className="Nav-link" onClick={setServiceVisbility} ><li>Tjänster ↓
                         
                         {isServicesOn &&

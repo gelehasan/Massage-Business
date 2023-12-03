@@ -5,6 +5,7 @@ import { getAllServices } from "../../Store/services/serviceSelector";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Services = ({AllServices})=>{
   const {serviceId} = useParams();
       const [selectedService, setSelectedService] = useState(AllServices[serviceId])
@@ -76,10 +77,10 @@ const Services = ({AllServices})=>{
       <div class="contentRight">
         
         <div className="timeBooking">
-    <h2> Afrikansk Signatur</h2>
+    <h2> {data.name}</h2>
 <p>Boka din tid nu hos Aforoots of Sweden Massage & Cosmetics </p>
 <b>{data.prisOchTid}</b>
-<button className="bokanNu">Boka Nu</button>
+<Link to="/Booking" > <button className="bokanNu">Boka Nu</button> </Link>
         </div>
         <h3>Arbetstid</h3>
         <div className="timeSheet">

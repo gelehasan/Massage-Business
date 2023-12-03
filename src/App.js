@@ -15,6 +15,7 @@ import DashBoard from './Routes/AdminDashBoard/Dashboard';
 import { getAllServicesDetails } from './Firebase/Firebase';
 import { setServiceData,setServiceLoadingState } from './Store/services/serviceActions';
 import ServicePage from './Components/ServicePage/ServicePage';
+import OmOssPage from './Components/OmOss/OmOssPage';
 import BookingPage from './Routes/Bookings/BookingPage';
 function App() {
 
@@ -59,6 +60,7 @@ function App() {
       <Route path='/AddService' element={<AddService />}/>
       <Route path='/DashboardLinks' element={<DashBoard/>}/>
       <Route path='/Booking' element={<BookingPage/>}/>
+      <Route path='/OmOss' element={<OmOssPage/>}/>
       </Route>
       </Routes>
     </div>
