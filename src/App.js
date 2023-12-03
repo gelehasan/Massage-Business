@@ -17,6 +17,7 @@ import { setServiceData,setServiceLoadingState } from './Store/services/serviceA
 import ServicePage from './Components/ServicePage/ServicePage';
 import OmOssPage from './Components/OmOss/OmOssPage';
 import BookingPage from './Routes/Bookings/BookingPage';
+import KontaktaOssPage from './Components/KontaktaOss/KontaktaOss';
 function App() {
 
   const dispatch = useDispatch();
@@ -61,6 +62,7 @@ function App() {
       <Route path='/DashboardLinks' element={<DashBoard/>}/>
       <Route path='/Booking' element={<BookingPage/>}/>
       <Route path='/OmOss' element={<OmOssPage/>}/>
+      <Route path="/KontaktaOss" element={<KontaktaOssPage />}/>
       </Route>
       </Routes>
     </div>

@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import { SignOutUser } from "../../Firebase/Firebase";
 import { useNavigate } from "react-router-dom";
 import { Titles } from "../../Store/services/serviceSelector";
+import Footer from "../../Components/Footer/Footer";
 const Navbar = ()=>{
     const currentUser = useSelector((state)=> state.user.currentUser);
     const serviceTitles = useSelector(Titles);
@@ -75,7 +76,7 @@ const Navbar = ()=>{
                         }
                         
                     </li></Link>
-                <Link to={"/"} className="Nav-link"><li>Kontakta Oss</li></Link>
+                <Link to={"/KontaktaOss"} className="Nav-link"><li>Kontakta Oss</li></Link>
                {currentUser !=null && currentUser.Admin==true &&  
                <Link to={"/DashboardLinks"} className="Nav-link"><li >Admin DashBoard</li></Link>} 
                 <li>+46739752503</li>
@@ -87,6 +88,8 @@ const Navbar = ()=>{
             </div>
 
         </div>
+
+      
         <Outlet/>
         </>
     )

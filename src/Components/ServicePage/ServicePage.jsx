@@ -4,6 +4,7 @@ import { getAllServices } from "../../Store/services/serviceSelector";
 import { useEffect, useState } from "react";
 import LoadingSpinner from "../LoadingSpinner/loadingSpinner";
 import { useParams } from "react-router-dom";
+import Footer from "../Footer/Footer";
 const ServicePage = ()=>{
     const isServiceLoading = useSelector((state)=>state.services.isServiceLoading);
     const AllServices = useSelector(getAllServices)
@@ -25,7 +26,7 @@ const ServicePage = ()=>{
         
         }
            
-
+          
         </div>
     )
 }

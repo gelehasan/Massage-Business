@@ -6,7 +6,7 @@ import { getAllServices } from "../../Store/services/serviceSelector";
 import LoadingSpinner from "../../Components/LoadingSpinner/loadingSpinner";
 import DashBoardLinks from "../../Components/DashBoardComponents/DashboardLinks";
 import { useSelector } from "react-redux";
-
+import Footer from "../../Components/Footer/Footer";
 const DashBoard = () => {
     const isServiceLoading= useSelector((state)=> state.services.isServiceLoading) 
 
@@ -17,7 +17,7 @@ const DashBoard = () => {
         :
         <DashBoardLinks />
         }
-
+   <Footer/>
     </div>
   );
 };

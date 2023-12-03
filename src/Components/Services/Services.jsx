@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 const Services = ({AllServices})=>{
   const {serviceId} = useParams();
       const [selectedService, setSelectedService] = useState(AllServices[serviceId])
@@ -112,7 +113,7 @@ Lördag 09:00 - 19:00 09:00 - 15:00 Söndag är stängt
             
 
 
-
+    <Footer/>
         </div>
     )
 }

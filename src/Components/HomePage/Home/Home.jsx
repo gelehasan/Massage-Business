@@ -4,6 +4,7 @@ import ShowCase from "../ServiceShowCase/ShowCase"
 import Treatments from "../Treatmeants/Treatmeants"
 import Massage from "../MassageServices/Massage"
 import Product from "../Products/Products"
+import Footer from "../../Footer/Footer"
 const HomePage = ()=>{
 
 
@@ -14,7 +15,7 @@ const HomePage = ()=>{
             <Treatments/>
             <Massage/>
             <Product />
-       
+            <Footer />
         </div>
     )
 }
