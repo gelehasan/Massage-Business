@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./sliderStyle.css";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -44,7 +45,8 @@ const Slider = () => {
       <div className="slides">
         <h1>{h1Text}</h1>
         <p>{pText}</p>
-        <button className="bokanNu">Boka Nu</button>
+        <button className="bokanNu">
+          <Link to={"/Booking"}> Boka Nu </Link></button>
       </div>
       
     </div>

@@ -15,6 +15,7 @@ import DashBoard from './Routes/AdminDashBoard/Dashboard';
 import { getAllServicesDetails } from './Firebase/Firebase';
 import { setServiceData,setServiceLoadingState } from './Store/services/serviceActions';
 import ServicePage from './Components/ServicePage/ServicePage';
+import BookingPage from './Routes/Bookings/BookingPage';
 function App() {
 
   const dispatch = useDispatch();
@@ -57,6 +58,7 @@ function App() {
       <Route path='/Admin/SignIn' element={<SignIn/>}/>
       <Route path='/AddService' element={<AddService />}/>
       <Route path='/DashboardLinks' element={<DashBoard/>}/>
+      <Route path='/Booking' element={<BookingPage/>}/>
       </Route>
       </Routes>
     </div>
