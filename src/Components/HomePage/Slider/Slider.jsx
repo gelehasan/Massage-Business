@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    h1Text: "Massage and Fun",
-    pText: "Okay just have fun",
+    h1Text: "Kärnan av Vår Existens",
+    pText: "Förstå vikten Ubuntu i vår filosofi. Lär dig hur detta begrepp präglar vårt sätt att Se på sammanhang enhet och vårt ömsesidiga beroende.",
     imgSrc: "noWay"
   },
   {
-    h1Text: "Massage and boring",
-    pText: "Okay just have boring",
+    h1Text: " Massage & Cosmetics",
+   
+    pText: "Upptäck vårt djupa engagemang för att förena kropp, själ och sinne genom afrikansk massage och filosin av Ubuntu",
     imgSrc: "noWay"
   },
 ];

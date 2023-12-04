@@ -3,6 +3,7 @@ import "./style.css";
 import { postFormDataToDatabase } from "../../Firebase/Firebase";
 import { AddNewService } from "../../Firebase/Firebase";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 const AddService = () => {
   const currentUser = useSelector((state)=> state.user.currentUser)
   console.log(currentUser)
@@ -21,7 +22,7 @@ const AddService = () => {
     serviceImage: "",
     prisOchTid:""
   });
-
+  const Navigate = useNavigate();
   const handleInputChange = (name, value) => {
     setFormData({
       ...formData,
@@ -63,16 +64,25 @@ const AddService = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if(currentUser && currentUser.Admin==true){
-      AddNewService(formData)
+      try {
+        await  AddNewService(formData)
+        Navigate("/DashboardLinks")
+        window.location.reload();
+      
+      } catch (error) {
+        
+      }
+    
 
     }
     
-    console.log(formData);
+
   };
+
 
   return (
     <div className="form-container">
