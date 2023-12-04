@@ -53,7 +53,6 @@ const BookingForm = ()=>{
     }
     return(
         <div className="bookingContainer">
-
             {isFormSubmited &&<p className="submittedForm">Ditt formulär har skickats ✔</p>}
         <form className="booking-form" onSubmit={handleSubmit}>
         <label>

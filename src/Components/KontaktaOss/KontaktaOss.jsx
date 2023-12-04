@@ -1,13 +1,51 @@
 
 import "./style.css"
 import Footer from "../Footer/Footer"
-const KontaktaOssPage = ()=>{
-    
-    const handleInputChange = ()=>{
+import { useState } from "react"
 
-  
+const formDetails= {
+  Namn:"",
+  Melj:"",
+  Nummer:"",
+  Meddelande:""
+
+}
+const KontaktaOssPage = ()=>{
+      const [kontaktDetails, setKontaktDetails]= useState(formDetails);
+      const [isFormSubmited, setFormSubmited] = useState(false);
+    const handleInputChange = (event)=>{
+      const {value, name}= event.target;
+      console.log(kontaktDetails)
+      setKontaktDetails({...kontaktDetails, [name]:value})
     }
-    return(
+
+    const kontaktSubmission = async (e)=>{
+      e.preventDefault();
+      try {
+        const response = await fetch('https://formspree.io/f/xdorrqjy', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(kontaktDetails),
+        });
+  
+        if (response.ok) {
+          console.log('Form submitted successfully!');
+          setFormSubmited(true)
+          setKontaktDetails(formDetails)
+        } else {
+          console.error('Form submission failed.');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
+    
+
+
+     
+    }
+    return(<>  
         <div className="kontaktaOssContainer">
         <div className="kontaktaOssHeader">
             <img  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
@@ -26,12 +64,12 @@ const KontaktaOssPage = ()=>{
             <div className="kontaktaOssForm">
             <h3>    Skicka Ett Meddelande
 Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du behöver. </h3>
-                <form className="KonatkaOssMessage-form">
-       
+                <form className="KonatkaOssMessage-form" onSubmit={kontaktSubmission}>
+                {isFormSubmited &&<p className="submittedForm">Ditt formulär har skickats ✔</p>}
           <input
             type="text"
             name="Namn"
-            value={""}
+            value={kontaktDetails.Namn}
             onChange={(e) =>handleInputChange(e)}
             required
             placeholder="Namn*"
@@ -43,7 +81,7 @@ Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du b
           <input
             type="email"
             name="Melj"
-            value={""}
+            value={kontaktDetails.Melj}
             onChange={(e) =>handleInputChange(e)}
             required
             placeholder="E-post*"
@@ -55,7 +93,7 @@ Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du b
           <input
             type="tel"
             name="Nummer"
-            value={""}
+            value={kontaktDetails.Nummer}
             onChange={(e) =>handleInputChange(e)}
             required
             placeholder=" Titelbeskrivning*"
@@ -64,8 +102,8 @@ Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du b
   
 
           <textarea
-            value={""}
             name="Meddelande"
+            value={kontaktDetails.Meddelande}
             onChange={(e) =>handleInputChange(e)}
             placeholder="Meddelande"
           />
@@ -102,6 +140,8 @@ Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du b
         </div>
         <Footer/>
         </div>
+       
+        </>
     )
 }
 
