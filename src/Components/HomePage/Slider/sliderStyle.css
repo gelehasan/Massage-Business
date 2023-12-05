@@ -15,11 +15,17 @@
     flex-direction: column;
     gap: 0;
     justify-content: center;
+   
 }
 .slides h1{
     margin: 0;
+   
 }
 
+.slides p{
+   padding: 0 15px 0 15px;
+   font-size: 1.2rem;
+}
 .bokanNu{
     width: 120px;
     height: 34px;
