@@ -68,6 +68,9 @@
 
     }
     
+    .bottom-div{
+      flex-direction: column;
+    }
     .social-icons{
       flex-direction: column;
       gap: 0;
