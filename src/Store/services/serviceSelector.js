@@ -8,20 +8,14 @@ export const ServicesSlice = createSelector(
     (Services)=> Services
 )
 
-
 export const getAllServices = createSelector(
     [ServicesSlice],
     (Services)=> Services.Services
 )
 
-
-
 export const Titles = createSelector(
     [getAllServices],
     (Services)=>{
-
-
-
 
       const Titles= [];
 
@@ -29,20 +23,15 @@ export const Titles = createSelector(
             Titles.push(service.id);
         })
 
-
         return Titles;
 
     }
 )
 
 
-
 export const ServicesBooking = createSelector(
     [getAllServices],
     (Services)=>{
-
-
-
 
       const Titles= [];
 
@@ -50,7 +39,6 @@ export const ServicesBooking = createSelector(
             const {data}= service;
             Titles.push(`${service.id} ${data.prisOchTid}`);
         })
-
 
         return Titles;
 
