@@ -9,7 +9,6 @@ import Footer from "../../Components/Footer/Footer";
 const DashBoard = () => {
     const isServiceLoading= useSelector((state)=> state.services.isServiceLoading) 
 
-    console.log()
   return (
     <div>
         { isServiceLoading ? <LoadingSpinner /> 
