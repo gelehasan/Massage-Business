@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./style.css"; 
 import { useState,useEffect } from "react";
 import { getAllServices } from "../../Store/services/serviceSelector";
