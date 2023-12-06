@@ -1,6 +1,3 @@
-
-
-
 const InitialUserState={
     currentUser:null
 }
@@ -16,7 +13,6 @@ export const userReducer = (state=InitialUserState, action)=>{
     switch(type){
         case userTypes.setCurrentUser:
             return{...state, currentUser:payload}
-        
         default:
             return state
     }
