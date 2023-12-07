@@ -4,35 +4,34 @@
     padding: 20px;
   }
   
-  .service-form {
-    display: flex;
-    flex-direction: column;
-  }
+.service-form {
+  display: flex;
+  flex-direction: column;
+}
   
-  label {
-    margin-top: 10px;
-  }
+label {
+  margin-top: 10px;
+}
   
-  input {
-    margin-bottom: 10px;
-    height: 30px;
-  }
+input {
+  margin-bottom: 10px;
+  height: 30px;
+}
   
 
-  .addService{
-    height: 30px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+.addService{
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 .btnLists{
-
-height: 40px;
-font-size: 1.09rem;
-background-color: azure;
-border: none;
+  height: 40px;
+  font-size: 1.09rem;
+  background-color: azure;
+  border: none;
 }
 
   
