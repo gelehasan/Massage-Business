@@ -17,8 +17,6 @@ const BookingForm = ()=>{
     const [isFormSubmited, setFormSubmited] = useState(false);
     const AvaialableServices = useSelector(ServicesBooking);
 
-
-
     const handleInputChange= (event)=>{
         const {name, value}= event.target;
 
