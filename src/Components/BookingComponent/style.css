@@ -1,9 +1,8 @@
-/* BookingForm.css */
+
 .submittedForm{
     font-size: 1.2rem;
     color: darkblue;
     margin: 0;
-
 }
 .bookingContainer{
     display: flex;
@@ -33,15 +32,15 @@
     box-sizing: border-box;
   }
   
-  .booking-form textarea {
-    resize: vertical;
-  }
+.booking-form textarea {
+  resize: vertical;
+}
   
-  .booking-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
+.booking-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
   
