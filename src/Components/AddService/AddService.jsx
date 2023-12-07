@@ -76,19 +76,13 @@ const AddService = () => {
       } catch (error) {
         
       }
-    
-
     }
-    
-
   };
 
 
   return (
     <div className="form-container">
       <form className="service-form" onSubmit={handleSubmit}>
-      
-
         <label>Service Title</label> <br />
         <input
           id="title"
@@ -97,7 +91,6 @@ const AddService = () => {
           onChange={(e) => handleInputChange(e.target.name, e.target.value)}
         />
         <br />
-
 
         <label>Service backgrund text</label> <br />
         <input
@@ -108,9 +101,6 @@ const AddService = () => {
         />
         <br />
 
-
-
-
         <label>Rubrik 1</label> <br />
         <input
           id="rubrik"
@@ -119,8 +109,6 @@ const AddService = () => {
           onChange={(e) => handleInputChange(e.target.name, e.target.value)}
         />
         <br />
-
-
 
         <label>Information 1</label> <br />
         <input
@@ -175,8 +163,6 @@ const AddService = () => {
         </button>
         <br />
 
-
-
         <label>Bild om tjänsten</label> <br />
         <input
           id="imageOfService"
@@ -211,8 +197,6 @@ const AddService = () => {
 </button>
 <br />
 
-
-
 <label>Service Image</label> <br />
 <input
   id="serviceImage"
@@ -221,7 +205,6 @@ const AddService = () => {
   onChange={(e) => handleInputChange(e.target.name, e.target.value)}
 />
 <br />
-
 
 
 <label>Pris Och tid</label> <br />
