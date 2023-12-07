@@ -47,9 +47,6 @@ const BookingForm = ()=>{
           } catch (error) {
             console.error('Error submitting form:', error);
           }
-        
-
-    
     }
     return(
         <div className="bookingContainer">
