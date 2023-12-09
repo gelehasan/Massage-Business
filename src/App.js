@@ -52,7 +52,6 @@ function App() {
 
   return (
     <div>
-
       <Routes>
       <Route path='/' element={  <Navbar/>} > 
       <Route index element={<HomePage/>}/>
