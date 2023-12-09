@@ -14,12 +14,12 @@ const UpdateServicePage = ()=>{
 
         <div>
       
-      <UpdateService AllServices={AllServices}/>
+      
             { 
-          /* isServiceLoading ?
+           isServiceLoading ?
 
             <LoadingSpinner/>:
-           */
+            <UpdateService AllServices={AllServices}/>
         
             }
             

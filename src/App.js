@@ -64,7 +64,7 @@ function App() {
       <Route path='/Booking' element={<BookingPage/>}/>
       <Route path='/OmOss' element={<OmOssPage/>}/>
       <Route path="/KontaktaOss" element={<KontaktaOssPage />}/>
-      <Route path='/UpdateService/:id' element={<UpdateServicePage />}/>
+      <Route path='/UpdateService/:serviceId' element={<UpdateServicePage />}/>
       </Route>
       </Routes>
     </div>

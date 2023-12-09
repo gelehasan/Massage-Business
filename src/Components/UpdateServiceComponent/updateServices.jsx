@@ -4,25 +4,29 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { updateServiceFields } from "../../Firebase/Firebase";
 
+const inputFields = {
+  serviceTitle: "",
+  serviceBackgrundText:"",
+  rubrik: "",
+  info1: "",
+  info2: "",
+  rubrik2: "",
+  info3:"",
+  listor: [],
+  imageOfService: "",
+  ovrigtInfomation: "",
+  otherList: [],
+  serviceImage: "",
+  prisOchTid:""
+}
 const UpdateService = ({AllServices})=>{
-  console.log(AllServices)
+
     const currentUser = useSelector((state)=> state.user.currentUser)
-    console.log(currentUser)
-    const [formData, setFormData] = useState({
-      serviceTitle: "",
-      serviceBackgrundText:"",
-      rubrik: "",
-      info1: "",
-      info2: "",
-      rubrik2: "",
-      info3:"",
-      listor: [],
-      imageOfService: "",
-      ovrigtInfomation: "",
-      otherList: [],
-      serviceImage: "",
-      prisOchTid:""
-    });
+    const {serviceId} = useParams();
+    console.log()
+    
+    const [formData, setFormData] = useState(AllServices[serviceId].data);
+    console.log(formData)
     const Navigate = useNavigate();
     const handleInputChange = (name, value) => {
       setFormData({
@@ -83,6 +87,8 @@ const UpdateService = ({AllServices})=>{
   
     return (
       <div className="form-container">
+
+
        {  /* <form className="service-form" onSubmit={handleSubmit}>
           <label>Service Title</label> <br />
           <input
