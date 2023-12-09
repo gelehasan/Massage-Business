@@ -23,10 +23,9 @@ const UpdateService = ({AllServices})=>{
 
     const currentUser = useSelector((state)=> state.user.currentUser)
     const {serviceId} = useParams();
-    console.log()
-    
+
     const [formData, setFormData] = useState(AllServices[serviceId].data);
-    console.log(formData)
+
     const Navigate = useNavigate();
     const handleInputChange = (name, value) => {
       setFormData({
@@ -71,10 +70,12 @@ const UpdateService = ({AllServices})=>{
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-      
+    
+    
       if(currentUser && currentUser.Admin==true){
         try {
-          await  updateServiceFields(formData)
+          const response = await updateServiceFields(formData)
+          console.log(response)
           Navigate("/DashboardLinks")
           window.location.reload();
         
@@ -89,16 +90,16 @@ const UpdateService = ({AllServices})=>{
       <div className="form-container">
 
 
-       {  /* <form className="service-form" onSubmit={handleSubmit}>
+ <form className="service-form" onSubmit={handleSubmit}>
           <label>Service Title</label> <br />
           <input
             id="title"
-            name="serviceTitle"
-            value={formData.serviceTitle}
+            name="name"
+            value={formData.name}
             onChange={(e) => handleInputChange(e.target.name, e.target.value)}
           />
           <br />
-  
+   
           <label>Service backgrund text</label> <br />
           <input
             id="serviceBackgrundText"
@@ -225,7 +226,7 @@ const UpdateService = ({AllServices})=>{
   <br />
           <button className="addService" type="submit">Submit</button>
         </form>
-        */}
+ 
       </div>
     );
 }

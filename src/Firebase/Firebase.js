@@ -128,11 +128,11 @@ export const getServiceInfomartion= async (serviceName)=>{
 
 
   export const updateServiceFields = async (formData) => {
-    const serviceDocRef = doc(db, "Services", formData.serviceTitle);
-  
+    const serviceDocRef = doc(db, "Services", formData.name);
+  console.log(formData)
     try {
       await updateDoc(serviceDocRef, {
-      name: formData.serviceTitle, 
+      name: formData.name, 
       serviceBackgrundText: formData.serviceBackgrundText,
       rubrik: formData.rubrik,
       info1: formData.info1,
