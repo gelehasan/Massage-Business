@@ -18,6 +18,8 @@ import ServicePage from './Components/ServicePage/ServicePage';
 import OmOssPage from './Components/OmOss/OmOssPage';
 import BookingPage from './Routes/Bookings/BookingPage';
 import KontaktaOssPage from './Components/KontaktaOss/KontaktaOss';
+import UpdateServicePage from './Routes/UpdateServicePage/UpdateServicePage';
+
 function App() {
 
   const dispatch = useDispatch();
@@ -62,6 +64,7 @@ function App() {
       <Route path='/Booking' element={<BookingPage/>}/>
       <Route path='/OmOss' element={<OmOssPage/>}/>
       <Route path="/KontaktaOss" element={<KontaktaOssPage />}/>
+      <Route path='/UpdateService/:id' element={<UpdateServicePage />}/>
       </Route>
       </Routes>
     </div>

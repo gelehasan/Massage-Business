@@ -127,7 +127,7 @@ export const getServiceInfomartion= async (serviceName)=>{
   };
 
 
-  export const updateService = async (formData) => {
+  export const updateServiceFields = async (formData) => {
     const serviceDocRef = doc(db, "Services", formData.serviceTitle);
   
     try {

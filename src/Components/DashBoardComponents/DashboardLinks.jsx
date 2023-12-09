@@ -2,7 +2,6 @@ import "./style.css"
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { removeService } from "../../Firebase/Firebase";
-
 const DashBoardLinks = ()=>{
     const ServicesData= useSelector((state)=> state.services.Services) 
 
@@ -26,7 +25,7 @@ const DashBoardLinks = ()=>{
         </div>
      
       {
-        ServicesData.map((item)=>{
+        ServicesData.map((item, index)=>{
            
             return(
                 <div className="AvaiableServices"  key={item.id}>
@@ -34,7 +33,7 @@ const DashBoardLinks = ()=>{
                 <div> <h4 > {item.id}</h4> </div>
              
                 <div className="serviceCrud">   
-                <button> Update  </button>
+                <Link to={`/UpdateService/${index}`}> <button> Update  </button></Link>
                  <button onClick={() => removeServiceFromList(item.id)}>  Delete </button>
               </div>
                 </div>
