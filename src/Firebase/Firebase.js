@@ -17,8 +17,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-
-
 const auth = getAuth();
 
 const db =  getFirestore();
@@ -31,10 +29,7 @@ export const getUserInformation= async (userId)=>{
       return userData;
            
   }
-     
-  
-  
-  
+    
 export const SignInUser = async (email, password) => {
       if (!email || !password) return;
     
@@ -48,8 +43,6 @@ export const SignOutUser = async ()=>
 
 export const onAuthStateChangedListener = (callback) =>
 onAuthStateChanged(auth, callback);
-
-
 
 export const AddNewService = async (formData) => {
  
@@ -87,8 +80,7 @@ if (!serviceSnapshot.exists()) {
 
   };
 
-
-  export const getServiceInfomartion= async (serviceName)=>{
+export const getServiceInfomartion= async (serviceName)=>{
     const serviceDocRef = doc(db, "Services", serviceName);
     const serviceSnapshot = await getDoc(serviceDocRef);
     const servviceData = await serviceSnapshot.data();
