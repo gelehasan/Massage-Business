@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import {doc, getDoc,getFirestore,collection,addDoc,getDocs} from 'firebase/firestore';
+import {doc, getDoc,getFirestore,collection,addDoc,getDocs, updateDoc} from 'firebase/firestore';
 import { deleteDoc } from "firebase/firestore";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
 import { onAuthStateChanged } from "firebase/auth";
@@ -127,3 +127,29 @@ export const getServiceInfomartion= async (serviceName)=>{
   };
 
 
+  export const updateService = async (formData) => {
+    const serviceDocRef = doc(db, "Services", formData.serviceTitle);
+  
+    try {
+      await updateDoc(serviceDocRef, {
+      name: formData.serviceTitle, 
+      serviceBackgrundText: formData.serviceBackgrundText,
+      rubrik: formData.rubrik,
+      info1: formData.info1,
+      info2: formData.info2,
+      rubrik2: formData.rubrik2,
+      info3: formData.info3,
+      listor: formData.listor,
+      imageOfService: formData.imageOfService,
+      ovrigtInfomation: formData.ovrigtInfomation,
+      otherList: formData.otherList,
+      serviceImage: formData.serviceImage,
+      prisOchTid:formData.prisOchTid,
+      });
+      console.log("Service updated successfully");
+    } catch (error) {
+      console.error("Error updating the service", error.message);
+      throw error;
+    }
+  };
+  
