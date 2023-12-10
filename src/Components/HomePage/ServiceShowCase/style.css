@@ -21,6 +21,11 @@
    
     width: 50%;
 }
+.showCaseServiceLeft h1{
+ 
+    word-break: break-all;
+    margin: 0;
+}
 .showCaseServiceImages{
 
     width: 40%;
