@@ -7,7 +7,7 @@ const Massage = ()=>{
         <div className="masssageServiceContainer">
 
             <div className="massageCol">
-            <img src="https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332992/femmassage_nncvb5.jpg"/>
 
           <div className="massageDescription">  
           <p> Klassig Massage (60min/600kr)</p>
@@ -19,7 +19,7 @@ const Massage = ()=>{
             </div>
 
             <div className="massageCol">
-            <img src="https://images.unsplash.com/photo-1489659639091-8b687bc4386e?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+            <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332898/head_dy3b6d.jpg"/>
 
           <div className="massageDescription">  
           <p> Afrikansk Signatur (60min/600kr)</p>
@@ -48,7 +48,7 @@ Djupgående aromatisk massage med ångade örter för ökad cirkulation och lind
             </div>
 
             <div className="massageCol">
-            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332729/message_t9laii.jpg" />
           <div className="massageDescription">  
           <p> Rungu Massage (60min/600kr)</p>
         <ul> 
