@@ -18,7 +18,7 @@ const Services = ({AllServices})=>{
     return(
         <div className="serviceContainer">
             <div className="serviceHeader">
-                <img src={serviceBackGround}/>
+                <img src={"https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332522/massageimg_a9mu9x.avif"}/>
 
                 <div className="details">
                     <h3>{data.name}</h3>
