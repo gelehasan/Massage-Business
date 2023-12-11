@@ -40,7 +40,7 @@ const Slider = () => {
     <div className="slider-container">
       <img
         className="sliderImg"
-        src="https://images.unsplash.com/photo-1617952986600-802f965dcdbc?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332335/main_gqbtfk.avif"
         alt="Slider Background"
       />
       <div className="slides">
