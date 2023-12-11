@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { updateServiceFields } from "../../Firebase/Firebase";
 
@@ -26,6 +26,7 @@ const UpdateService = ({AllServices})=>{
 
     const [formData, setFormData] = useState(AllServices[serviceId].data);
 
+    console.log(formData)
     const Navigate = useNavigate();
     const handleInputChange = (name, value) => {
       setFormData({
