@@ -24,39 +24,43 @@ const slides = [
 ];
 
 const Slider = () => {
-  const [count, setCount] = useState(0);
-  const [currentSlide, setCurrentSlide] = useState(slides[count]);
-
-  const { h1Text, pText, imgSrc } = currentSlide;
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount((prevCount) => (prevCount + 1) % slides.length);
-      setCurrentSlide(slides[count]); 
+      setCurrentSlideIndex(prevIndex => (prevIndex + 1) % slides.length);
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [count]);
+  }, []);
 
-  const handleCircleClick = (index) => {
-    setCount(index);
-    setCurrentSlide(slides[index]);
+  const handleDotClick = (index) => {
+    setCurrentSlideIndex(index);
   };
 
   return (
     <div className="slider-container">
       <img
         className="sliderImg"
-        src={imgSrc}
+        src={slides[currentSlideIndex].imgSrc}
         alt="Slider Background"
       />
       <div className="slides">
-        <h1>{h1Text}</h1>
-        <p>{pText}</p>
+        <h1>{slides[currentSlideIndex].h1Text}</h1>
+        <p>{slides[currentSlideIndex].pText}</p>
         <button className="bokanNu">
-          <Link to={"/Booking"}  className="Nav-link"> Boka Nu </Link></button>
+          <Link to={"/Booking"} className="Nav-link"> Boka Nu </Link>
+        </button>
       </div>
-      
+      <div className="slider-dots">
+        {slides.map((_, index) => (
+          <span 
+            key={index} 
+            className={`dot ${index === currentSlideIndex ? "active" : ""}`}
+            onClick={() => handleDotClick(index)}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 };
