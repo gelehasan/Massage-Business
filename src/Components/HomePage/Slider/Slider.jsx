@@ -6,19 +6,19 @@ const slides = [
   {
     h1Text: "Kärnan av Vår Existens",
     pText: "Förstå vikten Ubuntu i vår filosofi. Lär dig hur detta begrepp präglar vårt sätt att Se på sammanhang enhet och vårt ömsesidiga beroende.",
-    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332335/main_gqbtfk.avif"
+    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702416016/reakl_sctki7.webp"
   },
   {
     h1Text: " Massage & Cosmetics",
    
     pText: "Upptäck vårt djupa engagemang för att förena kropp, själ och sinne genom afrikansk massage och filosin av Ubuntu",
-    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332335/main_gqbtfk.avif"
+    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702415736/ds_y89g3i.webp"
   },
   {
     h1Text: "Harmoni med naturen",
    
     pText: "Utforska vårt engagemang för att leva i harmoni med den naturliga världen upptäckt hur vi integrerar Hållbarhet och miljömedvetenhet i vårt vardag.",
-    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332335/main_gqbtfk.avif"
+    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702416017/mss_mwblxt.jpg"
   },
   
 ];
