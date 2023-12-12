@@ -19,9 +19,9 @@ import OmOssPage from './Components/OmOss/OmOssPage';
 import BookingPage from './Routes/Bookings/BookingPage';
 import KontaktaOssPage from './Components/KontaktaOss/KontaktaOss';
 import UpdateServicePage from './Routes/UpdateServicePage/UpdateServicePage';
-
+import useScrollToTop from './ScrollUp/scrollTop';
 function App() {
-
+  useScrollToTop();
   const dispatch = useDispatch();
 
   useEffect(()=>{
