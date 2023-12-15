@@ -17,7 +17,7 @@ body{
 
 
 .Logo{
-    width: 70px;
+    width: 170px;
 }
 
 .Menus{
@@ -88,7 +88,8 @@ body{
     }
 
     .Logo{
-        width: 50px;
+        margin-top: 0.5em;
+        width: 150px;
     }
     
     .Menus{
