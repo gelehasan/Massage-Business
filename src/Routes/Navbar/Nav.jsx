@@ -41,7 +41,7 @@ const Navbar = ()=>{
             
             
             <div className="navLogo">
-              <Link to={"/"} >  <img src={MassageIcon} className="Logo "/>
+              <Link to={"/"} >  <img src={"https://res.cloudinary.com/ddeif6hmk/image/upload/v1702664614/ce5c9b5e-ce32-4fd4-90be-31576b9a82a8_kltfc3.jpg"} className="Logo "/>
               </Link> 
                 <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
                     className="Menus"
