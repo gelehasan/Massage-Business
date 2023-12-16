@@ -5,7 +5,7 @@ body{
     width: 90%;
   
     margin: 0 auto;
-    margin-top: 1em;
+
     background-color: transparent;
 
     display: flex;
@@ -17,8 +17,10 @@ body{
 
 
 .Logo{
-    width: 170px;
+    width: 250px;
+    height: 100px;
 }
+
 
 .Menus{
     display: none;
@@ -77,7 +79,7 @@ body{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 1em 0 1em;
+       
        
     }
     .navContainer{
@@ -88,7 +90,7 @@ body{
     }
 
     .Logo{
-        margin-top: 0.5em;
+
         width: 150px;
     }
     
