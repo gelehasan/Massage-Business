@@ -118,11 +118,16 @@ body{
     .navLogo{
         width: 100%;
         display: flex;
-     
-     
+        background-color: white;
        
     }
 
+    .logoDescription{
+        font-size: 13px;
+    }
+    .bottomLogoText{
+        color: black;
+    }
     .Menus {
         position: absolute;
         right: 0;
