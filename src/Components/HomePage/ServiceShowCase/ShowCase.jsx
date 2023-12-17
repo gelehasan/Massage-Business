@@ -20,10 +20,10 @@ const ShowCase = ()=>{
         </div>
     
         <div className="showCaseServiceImages">
-                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                        <img src="https://images.unsplash.com/photo-1489659639091-8b687bc4386e?q=80&w=2673&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                        <img src="https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?q=80&w=2454&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
-                        <img src="https://images.unsplash.com/photo-1598901986949-f593ff2a31a6?q=80&w=2697&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <img src="https://images.pexels.com/photos/6629538/pexels-photo-6629538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+                        <img src="https://images.pexels.com/photos/275768/pexels-photo-275768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+                        <img src="https://images.pexels.com/photos/10893346/pexels-photo-10893346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+                        <img src="https://images.pexels.com/photos/6560298/pexels-photo-6560298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
         </div>
         </div>
     )
