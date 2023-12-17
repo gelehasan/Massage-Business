@@ -2,7 +2,7 @@ import MassageIcon from "../../Assets/MassageLogo.png"
 import { Link, Navigate } from "react-router-dom";
 import "./Nav.css"
 import { useState } from "react";
-import MenuIcon from "../../Assets/Menu.svg";
+import MenuIcon from "../../Assets/align-left.svg";
 import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -41,10 +41,10 @@ const Navbar = ()=>{
             
         <div class="navLogo">
         
-        <div class="logoImage">
+     <Link to={"/"}>   <div class="logoImage">
           <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702816901/RealLog_enhanced_dgoxtq.png"/>
       </div>
-      
+      </Link> 
       <div class="logoDescription">
         <p> AFROROOTS OF SWEDEN</p>
         <p class="bottomLogoText"> MASSAGE & COSMETIC</p>
