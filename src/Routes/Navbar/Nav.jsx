@@ -39,14 +39,32 @@ const Navbar = ()=>{
     <>
         <div className="navContainer">
             
-            
-            <div className="navLogo">
-              <Link to={"/"} >  <img src={MassageIcon} className="Logo "/>
-              </Link> 
-                <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
+        <div class="navLogo">
+        
+        <div class="logoImage">
+          <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702816901/RealLog_enhanced_dgoxtq.png"/>
+      </div>
+      
+      <div class="logoDescription">
+        <p> AFROROOTS OF SWEDEN</p>
+        <p class="bottomLogoText"> MASSAGE & COSMETIC</p>
+      </div>
+      
+      <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
                     className="Menus"
                 />
-            </div>
+    </div>
+    
+            
+       {/*     <div className="navLogo">
+
+                
+              <Link to={"/"} >  <img src={MassageIcon} className="Logo "/>
+              </Link> 
+             
+    </div>*/}
+
+        
 
             <div className={isMenuOn ? "navLinks openMenu" : "navLinks"}>
 

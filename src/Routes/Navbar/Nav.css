@@ -12,14 +12,54 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin-top: 0.5em;
+ 
 
 }
 
 
-.Logo{
-    width: 250px;
-    height: 100px;
-}
+
+/* Logo Starts here*/
+
+
+.navLogo{
+    width:250px;
+     height:50px;
+   
+     display:flex;
+   }
+   
+   .logoImage{
+     position:relative;
+     width:50px;
+   }
+   .logoImage img{
+     width:100%;
+     height:50px;
+   border-radius: 10px;
+   }
+   
+   
+   .logoDescription{
+     font-size:16.43px;
+   
+     display:flex;
+     flex-direction:column;
+   justify-content: space-around;
+     color:#109490;
+   }
+   
+   .logoDescription p {
+     margin:0;
+     padding:0;
+   }
+   
+   .bottomLogoText {
+     color:white;
+   }
+
+
+/*  Ends here*/
 
 
 .Menus{
@@ -78,9 +118,14 @@ body{
     .navLogo{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+     
+     
        
-       
+    }
+
+    .Menus {
+        position: absolute;
+        right: 0;
     }
     .navContainer{
      margin: 0;
