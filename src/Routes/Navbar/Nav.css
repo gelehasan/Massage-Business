@@ -119,6 +119,7 @@ body{
         width: 100%;
         display: flex;
         background-color: white;
+        padding: 0px 10px 0px 10px;
        
     }
 
@@ -128,10 +129,7 @@ body{
     .bottomLogoText{
         color: black;
     }
-    .Menus {
-        position: absolute;
-        right: 0;
-    }
+
     .navContainer{
      margin: 0;
      width: 100%;
@@ -145,10 +143,11 @@ body{
     }
     
     .Menus{
+        position: absolute;
         display: block;
         width: 40px;
         cursor: pointer;
-        right: 0;
+        right: 0.5em;
     }
     .navLinks{
    

@@ -2,7 +2,7 @@ import MassageIcon from "../../Assets/MassageLogo.png"
 import { Link, Navigate } from "react-router-dom";
 import "./Nav.css"
 import { useState } from "react";
-import MenuIcon from "../../Assets/menu.svg";
+import MenuIcon from "../../Assets/Menu.svg";
 import XIcon from "../../Assets/x.svg";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
