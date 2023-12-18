@@ -33,7 +33,21 @@
 }
 
 
+/*ani*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+#showCase:target, #treatments:target, #massage:target, #product:target {
+    animation: fadeInUp 1s ease-out forwards;
+}
 
 @media(max-width:650px){
     .showCaseServiceContent{

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Treatments = () => {
 
     return (
-        <div className={`treatmentContainer`}>
+        <div id="treatments" className={`treatmentContainer`}>
             <h1> Elementen och energin  Energi i rörelse och glädje</h1>
             <p> Efter många års studier av massage och naturliga läkningsmetoder, har vi omfamnat den unika och kraftfulla formen av afrikansk klassisk massage.</p>
 
