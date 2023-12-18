@@ -12,7 +12,6 @@ const ShowCase = ()=>{
             <p>
             Erfarenheter av värk och smärta kan ofta hindra oss från att vara på vår bästa nivå.
             </p>
-    
             <ul>
                 <li>Perfekt för dig som spenderar långa timmar vid skrivbordet eller bakom ratten. </li>
                 <li> Vår avstressande massage fokuserar på att förbättra cirkulation och exibilitet, samtidigt som den minskar smärta och stress.</li>
