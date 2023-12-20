@@ -10,17 +10,17 @@ const slides = [
   },
   {
     h1Text: " Massage & Cosmetics",
-   
+
     pText: "Upptäck vårt djupa engagemang för att förena kropp, själ och sinne genom afrikansk massage och filosin av Ubuntu",
     imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702505240/m1_gs8swb.jpg"
   },
   {
     h1Text: "Harmoni med naturen",
-   
+
     pText: "Utforska vårt engagemang för att leva i harmoni med den naturliga världen upptäckt hur vi integrerar Hållbarhet och miljömedvetenhet i vårt vardag.",
     imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702505240/sh2_th7a7o.webp"
   },
-  
+
 ];
 
 const Slider = () => {
@@ -54,8 +54,8 @@ const Slider = () => {
       </div>
       <div className="slider-dots">
         {slides.map((_, index) => (
-          <span 
-            key={index} 
+          <span
+            key={index}
             className={`dot ${index === currentSlideIndex ? "active" : ""}`}
             onClick={() => handleDotClick(index)}
           ></span>
