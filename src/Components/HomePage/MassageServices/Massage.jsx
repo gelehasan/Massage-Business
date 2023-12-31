@@ -53,7 +53,7 @@ const Massage = () => {
       </div>
 
       <div className="massageCol" onClick={() => handleNavigation("/Services/7")}>
-        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332729/message_t9laii.jpg" />
+        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1704055585/runguMassage_qju498.avif" />
         <div className="massageDescription">
           <p> Rungu Massage (60min/600kr)</p>
           <ul>
