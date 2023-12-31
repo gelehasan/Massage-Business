@@ -6,7 +6,7 @@ const slides = [
   {
     h1Text: "Kärnan av Vår Existens",
     pText: "Förstå vikten Ubuntu i vår filosofi. Lär dig hur detta begrepp präglar vårt sätt att Se på sammanhang enhet och vårt ömsesidiga beroende.",
-    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702505366/main2_o5ymqr.avif"
+    imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1704056190/ook_wqz5hy.jpg"
   },
   {
     h1Text: " Massage & Cosmetics",
