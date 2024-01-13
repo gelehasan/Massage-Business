@@ -25,7 +25,7 @@ const Footer = () => {
             <br />
             <b>  Address: </b>Bromsgatan 4A, 653 41 Karlstad
             <br />
-            <b>E-mail:</b> Service@afrootofsweden.se
+            <b>E-mail:</b> <a href="mailto:afro@afrorootsofsweden.se">afro@afrorootsofsweden.se</a>
             <br />
             <b> Kontakt: </b>+46739752503
        

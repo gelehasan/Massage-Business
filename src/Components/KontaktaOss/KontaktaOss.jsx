@@ -130,7 +130,7 @@ Känn dig trygg att ställa vilken fråga du än har och berätta exakt vad du b
        </h4>
       <p> <b> Mobil : </b>+46739752503</p> 
 
-      <p><b> E-mail : </b>Service@afrootsofsweden.se</p> 
+      <p><b> E-mail : </b> <a href="mailto:afro@afrorootsofsweden.se">afro@afrorootsofsweden.se</a> </p> 
 
         <h4> Öpettider</h4>
         <p> <b> Måndag - Fredag :</b>09:00 - 19:00</p>
