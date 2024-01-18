@@ -18,7 +18,6 @@ const Treatments = () => {
 
             </div>
 
-
             <div className="treatMeantDescription">
 
                 <div className="treatMeantDescriptionCol">
@@ -30,7 +29,6 @@ const Treatments = () => {
                     </div>
                 </div>
 
-
                 <div className="treatMeantDescriptionCol">
                     <img src="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
 
@@ -39,7 +37,6 @@ const Treatments = () => {
 
                     </div>
                 </div>
-
 
                 <div className="treatMeantDescriptionCol">
                     <img src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
