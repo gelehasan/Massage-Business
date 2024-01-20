@@ -93,7 +93,7 @@ const UpdateService = ({ AllServices }) => {
 
       <form className="service-form" onSubmit={handleSubmit}>
         <label>Service Title</label> <br />
-        <input
+        <textarea
           id="title"
           name="name"
           value={formData.name}
@@ -102,7 +102,7 @@ const UpdateService = ({ AllServices }) => {
         <br />
 
         <label>Service backgrund text</label> <br />
-        <input
+        <textarea
           id="serviceBackgrundText"
           name="serviceBackgrundText"
           value={formData.serviceBackgrundText}
@@ -111,7 +111,7 @@ const UpdateService = ({ AllServices }) => {
         <br />
 
         <label>Rubrik 1</label> <br />
-        <input
+        <textarea
           id="rubrik"
           name="rubrik"
           value={formData.rubrik}
@@ -120,7 +120,7 @@ const UpdateService = ({ AllServices }) => {
         <br />
 
         <label>Information 1</label> <br />
-        <input
+        <textarea
           id="info1"
           name="info1"
           value={formData.info1}
@@ -130,7 +130,7 @@ const UpdateService = ({ AllServices }) => {
 
 
         <label>Information 2</label> <br />
-        <input
+        <textarea
           id="info2"
           name="info2"
           value={formData.info2}
@@ -140,7 +140,7 @@ const UpdateService = ({ AllServices }) => {
 
 
         <label>Rubrik 2</label> <br />
-        <input
+        <textarea
           id="rubrik2"
           name="rubrik2"
           value={formData.rubrik2}
@@ -149,7 +149,7 @@ const UpdateService = ({ AllServices }) => {
         <br />
 
         <label>Information 3</label> <br />
-        <input
+        <textarea
           id="info3"
           name="info3"
           value={formData.info3}
@@ -161,7 +161,7 @@ const UpdateService = ({ AllServices }) => {
         <label>Listor</label> <br />
         {formData.listor.map((item) => (
           <div key={item.id}>
-            <input
+            <textarea
               value={item.value}
               onChange={(e) => handleListaChange(item.id, e.target.value)}
             />
@@ -183,7 +183,7 @@ const UpdateService = ({ AllServices }) => {
 
 
         <label>Ovright information</label> <br />
-        <input
+        <textarea
           id="ovrigtInfomation"
           name="ovrigtInfomation"
           value={formData.ovrigtInfomation}
@@ -195,7 +195,7 @@ const UpdateService = ({ AllServices }) => {
         <label>Other List</label> <br />
         {formData.otherList.map((item) => (
           <div key={item.id}>
-            <input
+            <textarea
               value={item.value}
               onChange={(e) => handleOtherListChange(item.id, e.target.value)}
             />

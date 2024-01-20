@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    h1Text: "Kärnan av Vår Existens",
+    h1Text: "Kärnan av vår Existens",
     pText: "Förstå vikten Ubuntu i vår filosofi. Lär dig hur detta begrepp präglar vårt sätt att Se på sammanhang enhet och vårt ömsesidiga beroende.",
     imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1704056190/ook_wqz5hy.jpg"
   },
