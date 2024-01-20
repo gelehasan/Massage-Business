@@ -41,7 +41,6 @@ const KontaktaOssPage = () => {
       console.error('Error submitting form:', error);
     }
 
-
   }
   return (
     <div className="kontaktaOssContainer">

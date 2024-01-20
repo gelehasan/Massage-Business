@@ -74,9 +74,7 @@ const Navbar = ()=>{
                                     serviceTitles.map((service,index)=>(
                                    
                    <Link key={index}  to={"#"} className="Nav-link" onClick={()=>handleServiceClick(index)}>           
-                       <li  className="serviceItem " 
-                    
-                               
+                       <li  className="serviceItem"         
                                     >{service}</li>
                                  </Link>  
                                    
@@ -104,7 +102,6 @@ const Navbar = ()=>{
         <Outlet/>
         </>
     )
-
 
 }
 
