@@ -6,13 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import{Store} from "../src/Store/store";
 import { Provider } from 'react-redux';
+import UnderConstruction from './underconstraction';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
     <Provider store={Store}>
     <BrowserRouter> 
-   
+   <UnderConstruction />
     </BrowserRouter>
     </Provider>
   </React.StrictMode>
