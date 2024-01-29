@@ -206,14 +206,7 @@ const UpdateService = ({ AllServices }) => {
         </button>
         <br />
 
-        <label>Service Image</label> <br />
-        <input
-          id="serviceImage"
-          name="serviceImage"
-          value={formData.serviceImage}
-          onChange={(e) => handleInputChange(e.target.name, e.target.value)}
-        />
-        <br />
+   
 
 
         <label>Pris Och tid</label> <br />
