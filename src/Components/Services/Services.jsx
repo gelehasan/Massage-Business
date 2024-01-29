@@ -58,8 +58,9 @@ const Services = ({ AllServices }) => {
             }
           </ul>
 
-
-          <img className="servicePicture" src={data.imageOfService} />
+            <div class="servicePictureMain"> 
+          <img className="servicePicture " src={data.imageOfService} />
+          </div>
           <p>
             {data.ovrigtInfomation}
           </p>
@@ -101,13 +102,6 @@ const Services = ({ AllServices }) => {
 
           </div>
 
-
-          <div className="serviceExample Picture">
-
-            <h2>Bild på tjänsten</h2>
-            <img className="servicePicture" src={data.serviceImage} />
-
-          </div>
         </div>
       </div>
 
