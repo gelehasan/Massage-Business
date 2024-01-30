@@ -102,6 +102,15 @@ const AddService = () => {
         />
         <br />
 
+        <label> Service Background Bild</label> <br />
+        <input
+          id="serviceBackgroundImage"
+          name="serviceBackgroundImage"
+          value={formData.serviceBackgroundImage}
+          onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+        />
+        <br />
+
         <label>Rubrik 1</label> <br />
         <textarea
           id="rubrik"
