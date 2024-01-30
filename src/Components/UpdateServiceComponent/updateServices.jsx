@@ -7,6 +7,7 @@ import { updateServiceFields } from "../../Firebase/Firebase";
 const inputFields = {
   serviceTitle: "",
   serviceBackgrundText: "",
+  serviceBackgroundImage:"",
   rubrik: "",
   info1: "",
   info2: "",
@@ -106,6 +107,15 @@ const UpdateService = ({ AllServices }) => {
           id="serviceBackgrundText"
           name="serviceBackgrundText"
           value={formData.serviceBackgrundText}
+          onChange={(e) => handleInputChange(e.target.name, e.target.value)}
+        />
+        <br />
+
+        <label> Service Background Bild</label> <br />
+        <input
+          id="serviceBackgroundImage"
+          name="serviceBackgroundImage"
+          value={formData.serviceBackgroundImage}
           onChange={(e) => handleInputChange(e.target.name, e.target.value)}
         />
         <br />

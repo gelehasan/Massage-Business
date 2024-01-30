@@ -13,13 +13,13 @@ const Services = ({ AllServices }) => {
 
 
   const { data } = selectedService;
-
+console.log(data.serviceBackgroundImage)
   console.log(data)
   return (
     <div className="serviceContainer">
       <div className="serviceHeader">
-        <img src={"https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332522/massageimg_a9mu9x.avif"} />
-
+        <img src={data.serviceBackgroundImage} />
+        
         <div className="details">
           <h3>{data.name}</h3>
           <p>{data.serviceBackgrundText}</p>
