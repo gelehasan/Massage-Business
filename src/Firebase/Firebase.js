@@ -58,6 +58,7 @@ if (!serviceSnapshot.exists()) {
     await setDoc(serviceDocRef, {
       name: formData.serviceTitle, 
       serviceBackgrundText: formData.serviceBackgrundText,
+      serviceBackgroundImage: formData.serviceBackgroundImage,
       rubrik: formData.rubrik,
       info1: formData.info1,
       info2: formData.info2,

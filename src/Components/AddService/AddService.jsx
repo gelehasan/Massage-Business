@@ -10,6 +10,7 @@ const AddService = () => {
   const [formData, setFormData] = useState({
     serviceTitle: "",
     serviceBackgrundText:"",
+    serviceBackgroundImage:"",
     rubrik: "",
     info1: "",
     info2: "",
