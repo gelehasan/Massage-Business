@@ -102,6 +102,17 @@ const Services = ({ AllServices }) => {
 
           </div>
 
+            {
+              data.serviceImage &&
+
+              <div className="serviceExample Picture">
+
+              <h2>Bild på tjänsten</h2>
+              <img className="servicePicture" src={data.serviceImage} />
+  
+            </div>
+            }
+
         </div>
       </div>
 
