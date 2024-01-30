@@ -135,6 +135,7 @@ export const getServiceInfomartion= async (serviceName)=>{
       await updateDoc(serviceDocRef, {
       name: formData.name, 
       serviceBackgrundText: formData.serviceBackgrundText,
+      serviceBackgroundImage: formData.serviceBackgroundImage,
       rubrik: formData.rubrik,
       info1: formData.info1,
       info2: formData.info2,
