@@ -36,14 +36,16 @@
 }
 
 .servicePicture {
-    width: 320px;
+    width: 395px;
     height: 250px;
 }
 
 .servicePictureMain{
- 
-    align-items: center;
-    text-align: center;
+    width: 100%;
+
+display: flex;
+justify-content: center;
+
 
 }
 .timeBooking h2 {
