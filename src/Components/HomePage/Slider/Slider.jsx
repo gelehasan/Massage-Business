@@ -11,7 +11,7 @@ const slides = [
   {
     h1Text: " Massage & Cosmetics",
 
-    pText: "Upptäck vårt djupa engagemang för att förena kropp, själ och sinne genom afrikansk massage och filosin av Ubuntu",
+    pText: "Upptäck vårt djupa engagemang för att förena kropp, själ och sinne genom afrikansk massage och filosofin av Ubuntu.",
     imgSrc: "https://res.cloudinary.com/ddeif6hmk/image/upload/v1702505240/m1_gs8swb.jpg"
   },
   {
