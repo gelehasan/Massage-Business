@@ -18,7 +18,7 @@ console.log(data.serviceBackgroundImage)
   return (
     <div className="serviceContainer">
       <div className="serviceHeader">
-        <img src={data.serviceBackgroundImage} />
+        <img className="serviceBackgroundBild"  src={data.serviceBackgroundImage} />
         
         <div className="details">
           <h3>{data.name}</h3>
