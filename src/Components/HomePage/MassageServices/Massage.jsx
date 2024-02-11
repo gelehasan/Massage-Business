@@ -12,7 +12,7 @@ const Massage = () => {
     <div className="masssageServiceContainer">
 
       <div className="massageCol" onClick={() => handleNavigation("/Services/6")}>
-        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702332992/femmassage_nncvb5.jpg" />
+        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1707685871/stressmassage_qyh0vo.jpg" />
 
         <div className="massageDescription" >
           <p> Klassig Massage (60min/600kr)</p>
@@ -40,7 +40,7 @@ const Massage = () => {
 
 
       <div className="massageCol">
-        <img src="https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1704056190/ook_wqz5hy.jpg" />
 
         <div className="massageDescription" onClick={() => handleNavigation("/Services/5")}>
           <p> Kalebas Massage (60min/650kr)</p>
@@ -53,7 +53,7 @@ const Massage = () => {
       </div>
 
       <div className="massageCol" onClick={() => handleNavigation("/Services/7")}>
-        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1704055585/runguMassage_qju498.avif" />
+        <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1707686166/rungu_gxhgpe.png" />
         <div className="massageDescription">
           <p> Rungu Massage (60min/600kr)</p>
           <ul>
