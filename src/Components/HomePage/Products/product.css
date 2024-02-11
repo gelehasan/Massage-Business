@@ -10,9 +10,10 @@
 
 
 .productImg img {
-    width: 230px;
+    width: 260px;
     height: 240px;
-    object-fit: cover;
+    object-fit:cover;
+    object-position: left;
 }
 
 .productImg{

@@ -14,7 +14,7 @@ const Product = ()=>{
 
     <div className="productImg"> 
     <div>
-    <img  src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1707688268/green_oa7cug.webp"/>
+    <img  src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1707689373/kalabesh_atnxg2.jpg"/>
     </div>
     
     <div><img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1707689013/qasilorgin_vac2u5.jpg" />
