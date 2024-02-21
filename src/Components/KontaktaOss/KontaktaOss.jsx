@@ -118,7 +118,7 @@ const KontaktaOssPage = () => {
           </h4>
           <p> <b> Mobil : </b>+46739752503</p>
 
-          <p><b> E-mail : </b> <a href="mailto:afro@afrorootsofsweden.se">afro@afrorootsofsweden.se</a> </p>
+          <p><b> E-mail : </b> <a href="mailto:afro.Afroroots@gmail.com">afro.Afroroots@gmail.com</a> </p>
 
           <h4> Öpettider</h4>
           <p> <b> Måndag - Fredag :</b>09:00 - 19:00</p>
