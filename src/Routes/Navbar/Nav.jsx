@@ -4,6 +4,7 @@ import "./Nav.css"
 import { useState } from "react";
 import MenuIcon from "../../Assets/align-left.svg";
 import XIcon from "../../Assets/x.svg";
+import Logo from "../../Assets/Afroroot.png";
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { SignOutUser } from "../../Firebase/Firebase";
@@ -42,15 +43,9 @@ const Navbar = ()=>{
         <div class="navLogo">
         
      <Link to={"/"} className="Nav-link">   <div class="logoImage">
-          <img src="https://res.cloudinary.com/ddeif6hmk/image/upload/v1702816901/RealLog_enhanced_dgoxtq.png"/>
+          <img src={Logo} />
       </div>
-      </Link> 
-      <Link to={"/"} className="Nav-link">
-      <div class="logoDescription">
-        <p> AFROROOTS OF SWEDEN</p>
-        <p class="bottomLogoText"> MASSAGE & COSMETIC</p>
-      </div>
-      </Link> 
+      </Link>  
       <img src={isMenuOn ?  XIcon : MenuIcon} onClick={toggleMenu} 
                     className="Menus"
                 />

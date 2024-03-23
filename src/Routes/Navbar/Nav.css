@@ -31,12 +31,13 @@ body{
    
    .logoImage{
      position:relative;
-     width:50px;
+    
+
    }
    .logoImage img{
-     width:100%;
-     height:50px;
-   border-radius: 10px;
+     width:90px;
+     height:70px;
+   
    }
    
    
@@ -123,6 +124,11 @@ body{
        
     }
 
+    .logoImage img{
+      width:70px;
+      height:55px;
+    
+    }
     .logoDescription{
         font-size: 13px;
     }
