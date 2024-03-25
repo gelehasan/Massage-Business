@@ -48,7 +48,7 @@ const Footer = () => {
         <p>© 2023 Afroroots of Sweden AB. All Rights Reserved</p>
         <div className="social-icons">
           <h4>  <a href='https://www.instagram.com/afrorootsofsweden_/' className='socialLinks'>Instagram </a> </h4> 
-          <h4>Facebook</h4>
+          <h4> <a  href='https://www.bokadirekt.se/places/afro-roots-of-sweden-55964' className='socialLinks'> Facebook</a></h4>
         </div>
       </div>
     </footer>
