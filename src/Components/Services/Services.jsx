@@ -82,7 +82,7 @@ console.log(data.serviceBackgroundImage)
             <h2> {data.name}</h2>
             <p>Boka din tid nu hos Aforoots of Sweden Massage & Cosmetics </p>
             <b>{data.prisOchTid}</b>
-            <Link to="/Booking" > <button className="bokanNu">Boka Nu</button> </Link>
+            <Link to="https://www.bokadirekt.se/places/afro-roots-of-sweden-55964" > <button className="bokanNu">Boka Nu</button> </Link>
           </div>
           <h3>Arbetstid</h3>
           <div className="timeSheet">
