@@ -49,7 +49,7 @@ const Slider = () => {
         <h1>{slides[currentSlideIndex].h1Text}</h1>
         <p>{slides[currentSlideIndex].pText}</p>
         <button className="bokanNu">
-          <Link to={"/Booking"} className="Nav-link"> Boka Nu </Link>
+          <Link to={"https://www.bokadirekt.se/places/afro-roots-of-sweden-55964"} className="Nav-link"> Boka Nu </Link>
         </button>
       </div>
       <div className="slider-dots">
