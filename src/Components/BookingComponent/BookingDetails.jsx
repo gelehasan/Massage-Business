@@ -1,7 +1,8 @@
 import "./style.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useSelector } from "react-redux";
 import { ServicesBooking } from "../../Store/services/serviceSelector";
+import { useNavigate } from "react-router-dom";
 const BookingDetails = {
     Behandling:"",
     TidigareBesokt:"",
@@ -13,10 +14,16 @@ const BookingDetails = {
 }
 
 const BookingForm = ()=>{
+    const navigate= useNavigate();
     const [Bookinginputs, setBookingInputs] = useState(BookingDetails)
     const [isFormSubmited, setFormSubmited] = useState(false);
     const AvaialableServices = useSelector(ServicesBooking);
 
+    useEffect(() => {
+  
+        window.location.href = "https://www.bokadirekt.se/places/afro-roots-of-sweden-55964";
+    }, []);
+    return null;
     const handleInputChange= (event)=>{
         const {name, value}= event.target;
 
@@ -46,7 +53,10 @@ const BookingForm = ()=>{
             console.error('Error submitting form:', error);
           }
     }
+
+    
     return(
+        <> {/**
         <div className="bookingContainer">
             {isFormSubmited &&<p className="submittedForm">Ditt formulär har skickats ✔</p>}
         <form className="booking-form" onSubmit={handleSubmit}>
@@ -133,6 +143,8 @@ const BookingForm = ()=>{
         <button type="submit">Submit Booking</button>
       </form>
       </div>
+      */
+        </>
     )
 }
 
