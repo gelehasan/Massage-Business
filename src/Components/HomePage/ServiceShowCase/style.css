@@ -1,70 +1,76 @@
-
-
 .showCaseServiceContent {
-
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 3em;
-    display: flex;
-    justify-content: space-between ;
-
-    
-  
-}
-.showCaseServiceImages img{
-    width:200px;
-    height: 130px;
-    margin: 0.5em;
-}
-.showCaseServiceLeft{
-   
-    width: 50%;
-}
-.showCaseServiceLeft h1{
- 
-    word-break: break-all;
-    margin: 0;
-}
-.showCaseServiceImages{
-
-    width: 40%;
-    
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
+.showCaseServiceLeft {
+  flex: 1;
+  min-width: 0;
+}
 
-/*ani*/
+.showCaseServiceLeft h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--color-primary);
+  margin: 0 0 20px;
+  line-height: 1.2;
+  word-break: normal;
+}
+
+.showCaseServiceLeft p {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.showCaseServiceLeft ul {
+  padding-left: 20px;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
+
+.showCaseServiceLeft ul li {
+  margin-bottom: 8px;
+}
+
+.showCaseServiceImages {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.showCaseServiceImages img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.showCaseServiceImages img:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-md);
+}
+
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-#showCase:target, #treatments:target, #massage:target, #product:target {
-    animation: fadeInUp 1s ease-out forwards;
-}
+@media (max-width: 760px) {
+  .showCaseServiceContent {
+    flex-direction: column;
+    gap: 32px;
+    margin: 48px auto;
+  }
 
-@media(max-width:650px){
-    .showCaseServiceContent{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .showCaseServiceLeft{
-   
-        width: 100%;
-    }
-    .showCaseServiceImages{
-    
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
+  .showCaseServiceImages img {
+    height: 150px;
+  }
 }

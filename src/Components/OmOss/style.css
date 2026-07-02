@@ -1,172 +1,196 @@
-
-/*Design needs some documentation*/
 .omOssContainer {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vw;
-    z-index: -2;
-   
+  width: 100%;
+  background-color: var(--color-bg);
 }
 
 .omOssHeader {
-    position: relative;
-
-    width: 100%;
-    height: 430px;
-    display: flex;
-    justify-content: center;
-    
-    align-items: center;
-
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.omOssHeader img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    z-index: -99;
+.omOssHeader img.OmOssPic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.omOssHeader::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 28, 23, 0.55);
+  z-index: 1;
 }
 
 .omOssdetails {
-    position: absolute;
-    width: 80%;
-    color: white;
-    font-size: 1.2rem;
-    margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  color: var(--color-white);
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-
-.omOssServiceContainer{
-
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    gap: 10px;
-    margin-top: 3em;
-}
-.omOssImageContent img{
-    width: 420px;
-    height: 350px;
+.omOssdetails h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 0 12px;
+  color: var(--color-white);
 }
 
-.omOssImageContent {
-
-  
-    
+.omOssdetails span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
 }
 
-.omOssDescription {
-  
+.omOssServiceContainer {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 72px auto;
+  gap: 48px;
+  align-items: flex-start;
 }
 
-.omOssDescription h3{
-    font-size: 1.2rem;
+.omOssImageContent img {
+  width: 440px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
 }
 
+.omOssDescription h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--color-primary);
+  margin: 0 0 16px;
+}
 
+.omOssDescription p,
+.omOssDescription ul {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  font-size: 1rem;
+}
 
+.omOssDescription ul {
+  padding-left: 20px;
+}
+
+.omOssDescription ul li {
+  margin-bottom: 8px;
+}
 
 .showcase-container {
-    text-align: center;
-    padding: 50px;
-    margin-top: 2em;
-    height: 300px; 
-  }
-  
-  .company-name {
-    font-size: 36px;
-    font-style: italic;
-    margin-bottom: 20px;
-  }
-  
-  .showcasetitle {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .showcasemessage {
-    font-size: 18px;
-  }
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 80px 5%;
+}
 
-/* Three divs stytle*/
+.company-name {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-style: italic;
+  margin: 0 0 16px;
+  color: var(--color-accent);
+}
+
+.showcasetitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  margin: 0 0 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showcasemessage {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 
 .three-divs-container {
-    position: relative;
-    display: grid;
+  display: grid;
+  width: 90%;
+  max-width: 1200px;
+  margin: 72px auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 
-    width: 90%;
-    margin: 0 auto;
-    grid-template-columns: repeat(3,1fr);
+.three-divs-content-div {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.three-divs-content-div:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.three-divs-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+}
+
+.three-divs-title,
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+
+.three-divs-description,
+.description {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .three-divs-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .three-divs-content-div {
-    width: 300px;
-    margin: 10px;
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+}
+
+@media (max-width: 780px) {
+  .omOssServiceContainer {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px auto;
+    gap: 32px;
   }
-  
-  .three-divs-image {
+
+  .omOssImageContent img {
     width: 100%;
-    max-height: 150px; 
-    object-fit: cover;
-    border-radius: 8px;
+    height: 260px;
   }
-  
-  .three-divs-title {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-  
-  .three-divs-description {
-    font-size: 16px;
-  }
-
-@media (max-width:1125px){
-    .three-divs-container{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (max-width: 808px) {
-    .omOssImageContent {
-
-        text-align: center; 
-         width: 100%;
-    }
-    .three-divs-content-div{
-        width: 250px;
-    }
-    .omOssImageContent img{
-        width: 320px;
-        height: 230px;
-    }
-    
-    .omOssdetails {
-        width: 90%;
-    }
-   
-    .omOssServiceContainer {
-        flex-direction: column;
-        align-items: flex-start; 
-    }
-    .omOssServiceContainer  h3{
-        text-align: center;
-    }
 }
 
-@media (max-width: 600px){
-    .three-divs-container{
-        grid-template-columns: repeat(1,1fr);
-
-      
-    }
-
-    .three-divs-content-div{
-        margin: 0 auto;
-        margin-top: 0.3em;
-    }
-} 
+@media (max-width: 580px) {
+  .three-divs-container {
+    grid-template-columns: 1fr;
+  }
+}

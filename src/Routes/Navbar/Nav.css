@@ -1,197 +1,185 @@
-body{
-    background-color: antiquewhite;
-}
-.navContainer{
-    width: 90%;
-  
-    margin: 0 auto;
-
-    background-color: transparent;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-top: 0.5em;
- 
-
+.navContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(18, 28, 23, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
 }
 
-
-
-/* Logo Starts here*/
-
-
-.navLogo{
-     width:250px;
-    height:50px;
-     display:flex;
-   }
-   
-   .logoImage{
-     position:relative;
-    
-
-   }
-   .logoImage img{
-     width:80px;
-     height:68px;
-   
-   }
-   
-   
-   .logoDescription{
-     font-size:16.43px;
-   
-     display:flex;
-     flex-direction:column;
-   justify-content: space-around;
-     color:#109490;
-   }
-   
-   .logoDescription p {
-     margin:0;
-     padding:0;
-   }
-   
-   .bottomLogoText {
-     color:white;
-   }
-
-
-/*  Ends here*/
-
-
-.Menus{
-    display: none;
+.navInner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
 }
-.navLinks ul{
-    display: flex;
-  
-    gap: 34px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.logoImage img {
+  width: 52px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.Menus {
+  display: none;
+  width: 28px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.navLinks ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .navLinks ul li {
-    color: white;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
 }
+
+.navLinks ul li:hover {
+  color: var(--color-accent);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
 .Nav-link {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.serviceLinks {
+  list-style: none;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 220px;
+  background-color: var(--color-footer);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 200;
+}
+
+.serviceItem {
+  padding: 10px 20px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.serviceItem:hover {
+  background-color: rgba(201, 169, 110, 0.12);
+  color: var(--color-accent);
+}
+
+.signOut {
+  height: 34px;
+  padding: 0 16px;
+  background-color: #7f1d1d;
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.signOut:hover {
+  background-color: #991b1b;
+}
+
+@media (max-width: 768px) {
+  .navContainer {
+    position: relative;
+  }
+
+  .navInner {
+    width: 100%;
+    padding: 0 16px;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navLogo {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+  }
+
+  .logoImage img {
+    width: 44px;
+    height: 38px;
+  }
+
+  .Menus {
+    display: block;
+    position: static;
+  }
+
+  .navLinks {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    width: 100%;
+  }
+
+  .navLinks.openMenu {
+    max-height: 600px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0 16px;
+    border-top: 1px solid rgba(201, 169, 110, 0.15);
+  }
+
+  .navLinks ul li {
+    padding: 12px 16px;
+    border-radius: 0;
+    font-size: 1rem;
   }
 
   .serviceLinks {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 70%;
-    width: 200px;
-    background-color: darkcyan; 
-   
-    font-size: 1rem;
-    z-index: 99;
-
-
-  }
-  
-  .serviceItem {
-  
-    border-radius: 5px;
-    display: flex;
- 
-    text-align: left;
+    position: static;
     width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 4px 0;
+    margin-top: 4px;
+  }
+
+  .serviceItem {
+    padding: 10px 32px;
+  }
 }
-
-.signOut{
-  height: 23px;
-  background-color: darkred;
-  color: white;
-  
-  border: none;
-}
-@media (max-width:741px){
-    .navLogo{
-        width: 100%;
-        display: flex;
-        background-color: white;
-        padding: 10px;
-       
-    }
-
-    .logoImage img{
-      width:60px;
-      height:50px;
-    
-    }
-    .logoDescription{
-        font-size: 13px;
-    }
-    .bottomLogoText{
-        color: black;
-    }
-
-    .navContainer{
-     margin: 0;
-     width: 100%;
-
-   /* padding: 15px 15px 0px 15px;*/  
-    }
-
-    .Logo{
-
-        width: 150px;
-    }
-    
-    .Menus{
-        position: absolute;
-        display: block;
-        width: 40px;
-        cursor: pointer;
-        right: 0.5em;
-    }
-    .navLinks{
-   
-        position: absolute;
-        top: 100%;
-        right: 0%;
-  
-        background-color: black;
-        transition: right 0.3s ease-in-out;
-        right: -110%;
-        display: none;
-        z-index: 99;
-    }
-
-    .openMenu{
-        z-index: 99;
-        right: 0%;
-        display: block;
-    }
-
-    .serviceItem {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .openMenu .serviceLinks {
-        display: flex; 
-        flex-direction: column; 
-        position: relative;
-        width: 100%;
-        align-items:flex-start;
-        background-color: transparent;
-        padding-top: 15px;
-        
-    }
-
-    .navLinks ul{
-        flex-direction: column;
-        right: 0;
-    }
-}
-

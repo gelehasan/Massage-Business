@@ -143,7 +143,7 @@ const BookingForm = ()=>{
         <button type="submit">Submit Booking</button>
       </form>
       </div>
-      */
+      */}
         </>
     )
 }

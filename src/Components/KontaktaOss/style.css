@@ -1,91 +1,183 @@
-
 .kontaktaOssContainer {
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-    z-index: -2;
-   
+  width: 100%;
+  background-color: var(--color-bg);
 }
 
 .kontaktaOssHeader {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  position: relative;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .kontaktaOssHeader img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -99;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.kontaktaOssHeader::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(18, 28, 23, 0.55);
+  z-index: 1;
 }
 
 .kontaktaOssHeaderdetails {
-    position: absolute;
-    width: 80%;
-    color: white;
-    font-size: 1.2rem;
-    margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  color: var(--color-white);
+  text-align: center;
 }
 
-
-
-
-.kontaktaOssForm{
-
-    margin: 0 auto;
-    width: 80%;
+.kontaktaOssHeaderdetails h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 0 12px;
+  color: var(--color-white);
 }
 
-.kontaktaOssForm h3{
-    margin: 0;
-    text-align: left;
-    margin-top: 3em;
+.kontaktaOssHeaderdetails p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 12px;
 }
 
+.kontaktaOssHeaderdetails span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+}
 
+.omOssServiceContainer {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 72px auto;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.kontaktaOssForm {
+  flex: 1;
+}
+
+.kontaktaOssForm h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  margin: 0 0 28px;
+}
 
 .KonatkaOssMessage-form {
-    max-width: 400px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-    
-  }
+.KonatkaOssMessage-form input,
+.KonatkaOssMessage-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  outline: none;
+}
 
-  
+.KonatkaOssMessage-form input:focus,
+.KonatkaOssMessage-form textarea:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.12);
+}
 
-  .KonatkaOssMessage-form input
- {
-    width: 100%;
-    padding: 8px;
-    height: 40px;
-    margin-top: 4px;
-    box-sizing: border-box;
-  }
+.KonatkaOssMessage-form textarea {
+  height: 120px;
+  resize: vertical;
+}
 
-  .KonatkaOssMessage-form  textarea 
-  {
-    width: 100%;
-    padding: 8px;
-    height: 70px;
-    box-sizing: border-box;
-  }
-  
-  
-
-  
 .KonatkaOssMessage-form button {
-    background-color: black;
-    color: #fff;
-    padding: 10px;
-    width:120px;
-    border: none;
-    cursor: pointer;
+  align-self: flex-start;
+  padding: 14px 40px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.KonatkaOssMessage-form button:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.submittedForm {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.omOssDescription {
+  flex: 1;
+  padding: 8px 0;
+}
+
+.omOssDescription h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--color-primary);
+  margin: 0 0 16px;
+}
+
+.omOssDescription h4 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin: 20px 0 4px;
+  font-size: 1rem;
+}
+
+.omOssDescription p {
+  color: var(--color-text-muted);
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.omOssDescription a {
+  color: var(--color-secondary);
+  transition: color var(--transition);
+}
+
+.omOssDescription a:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 760px) {
+  .omOssServiceContainer {
+    flex-direction: column;
+    margin: 48px auto;
+    gap: 40px;
   }
-  
+}
